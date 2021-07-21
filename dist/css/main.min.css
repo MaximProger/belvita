@@ -446,7 +446,7 @@ body {
   position: relative;
   overflow: hidden;
   min-height: 904px;
-  padding-bottom: 300px;
+  padding-bottom: 230px;
 }
 .intro__content {
   position: relative;
@@ -504,7 +504,7 @@ body {
 .intro__photo__bg {
   position: absolute;
   top: 0;
-  right: -220px;
+  right: -150px;
   z-index: -1;
 }
 .intro__photo__bg__wrapper {
@@ -695,7 +695,6 @@ body {
   .intro__photo__bg {
     width: 100vw;
     height: 100%;
-    right: -150px;
   }
   .intro__photo__bg__wrapper {
     height: 100%;
