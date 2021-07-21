@@ -31,6 +31,16 @@ $(document).ready(function () {
       };
     }
   });
-});
 
-// document.addEventListener("DOMContentLoaded", function () {});
+  $("#cabinetPrizesSlider")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      centerMode: false,
+      autoplay: false,
+      prevArrow: $("#cabinetPrizesArrowPrev"),
+      nextArrow: $("#cabinetPrizesArrowNext"),
+    });
+});

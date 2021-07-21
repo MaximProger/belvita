@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>
+		Главная
+	</title>
+	<meta name="description" content="Startup HTML">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/include/slick.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="nav nav--left" id="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">
+								<span class="nav__link__text">
+									Главная
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="index.html" class="nav__link nav__link">
+								<span class="nav__link__text">
+									СОЖ-Тест
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">
+								<span class="nav__link__text">
+									О Продукте
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">
+								<span class="nav__link__text">
+									Победители
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">
+								<span class="nav__link__text">
+									Правила
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">
+								<span class="nav__link__text">
+									Обратная связь
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="nav nav--right">
+					<ul class="nav__list">
+						<li class="nav__item nav__item--burger no-xl md">
+							<button class="burger" id="burgerBtn" type="button">
+								<span class="burger__item">Menu</span>
+							</button>
+						</li>
+
+						<li class="nav__item nav__item--registration">
+							<a href="#" class="nav__btn btn">
+								зарегистрировать карту
+							</a>
+						</li>
+
+						<li class="nav__item nav__item--lk">
+							<a href="cabinet.html" class="nav__link">
+								<span class="nav__link__icon no-xl md"></span>
+								<span class="nav__link__text">
+									Личный кабинет
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<main class="main">
+
+  <div class="intro intro--cabinet">
+    <div class="container">
+      <div class="intro__inner">
+        <div class="intro__content">
+
+          <a href="#" class="logo">
+            <span class="logo__item">
+              <picture decoding="async">
+                <source type="image/webp" srcset="images/dist/belvita.webp">
+                <img class="logo__belvita" width="158" height="149" src="images/dist/belvita.png" alt="belvita"
+                  loading="lazy">
+              </picture>
+              <span class="logo__ellipse"></span>
+
+              <img class="logo__perecrestok" width="149" height="34" src="images/dist/perecrestok.svg" alt="perecrestok"
+                loading="lazy">
+            </span>
+          </a>
+
+          <div class="cabinet">
+            <div class="cabinet__head">
+              <h2 class="cabinet__title">
+                <span class="cabinet__title__text">
+                  Личный кабинет
+                </span>
+                <span class="cabinet__title__bg"></span>
+              </h2>
+
+              <div class="cabinet__info">
+                <div class="cabinet__info__name">
+                  Владислав К.
+                </div>
+                <div class="cabinet__info__line">
+                  <div class="cabinet__info__item">
+                    <img class="cabinet__info__icon" width="19" height="15" src="images/dist/cabinet/mail.svg"
+                      alt="mail" loading="lazy">
+                    <span class="cabinet__info__text">
+                      vl-k@email.ru
+                    </span>
+                  </div>
+
+                  <div class="cabinet__info__item">
+                    <img class="cabinet__info__icon" width="15" height="15" src="images/dist/cabinet/phone.svg"
+                      alt="phone" loading="lazy">
+                    <span class="cabinet__info__text">
+                      8-910-123-45-67
+                    </span>
+                  </div>
+                </div>
+
+                <div class="cabinet__info__card">
+                  <div class="cabinet__info__card__wrapper">
+                    <img class="cabinet__info__card__icon" width="59" height="38" src="images/dist/cabinet/card.png"
+                      alt="card" loading="lazy">
+                    <span class="cabinet__info__card__text">
+                      Номер вашей карты Клуба Перекрёсток: <span class="text__accent">
+                        1234-5678-9012-3456
+                      </span>
+                    </span>
+                  </div>
+                </div>
+
+                <a href="#" class="cabinet__info__link">
+                  Выйти
+                </a>
+
+              </div>
+            </div>
+
+            <div class="cabinet__body">
+              <div class="cabinet__box">
+                <div class="cabinet__box__wrapper">
+                  <h3 class="cabinet__box__title">
+                    Мои покупки
+                  </h3>
+
+                  <div class="cabinet__content">
+                    <div class="cabinet__purchases">
+                      <div class="cabinet__purchases__list">
+                        <div class="cabinet__purchases__head">
+                          <div class="cabinet__purchases__item">
+                            Дата покупки
+                          </div>
+
+                          <div class="cabinet__purchases__item">
+                            Статус розыгрыша
+                          </div>
+                        </div>
+
+                        <div class="cabinet__purchases__body">
+                          <div class="cabinet__purchases__line">
+                            <div class="cabinet__purchases__item">
+                              ХХ.ХХ.2021
+                            </div>
+
+                            <div class="cabinet__purchases__item">
+                              Вам повезёт в следующий раз!
+                            </div>
+                          </div>
+
+                          <div class="cabinet__purchases__line">
+                            <div class="cabinet__purchases__item">
+                              ХХ.ХХ.2021
+                            </div>
+
+                            <div class="cabinet__purchases__item cabinet__purchases__item--flex">
+                              <img class="cabinet__purchases__item__icon" width="21" height="21"
+                                src="images/dist/icons/green__star.svg" alt="star" loading="lazy">
+                              Победил!
+                            </div>
+                          </div>
+
+                          <div class="cabinet__purchases__line">
+                            <div class="cabinet__purchases__item">
+                              ХХ.ХХ.2021
+                            </div>
+
+                            <div class="cabinet__purchases__item">
+                              Вам повезёт в следующий раз!
+                            </div>
+                          </div>
+
+                          <div class="cabinet__purchases__line">
+                            <div class="cabinet__purchases__item">
+                              ХХ.ХХ.2021
+                            </div>
+
+                            <div class="cabinet__purchases__item">
+                              Вам повезёт в следующий раз!
+                            </div>
+                          </div>
+
+                          <div class="cabinet__purchases__line">
+                            <div class="cabinet__purchases__item">
+                              ХХ.ХХ.2021
+                            </div>
+
+                            <div class="cabinet__purchases__item">
+                              Ждёт розыгрыша
+                            </div>
+                          </div>
+
+                          <div class="cabinet__purchases__line">
+                            <div class="cabinet__purchases__item">
+                              ХХ.ХХ.2021
+                            </div>
+
+                            <div class="cabinet__purchases__item">
+                              Вам повезёт в следующий раз!
+                            </div>
+                          </div>
+
+                          <div class="cabinet__purchases__line">
+                            <div class="cabinet__purchases__item">
+                              ХХ.ХХ.2021
+                            </div>
+
+                            <div class="cabinet__purchases__item cabinet__purchases__item--flex">
+                              <img class="cabinet__purchases__item__icon" width="21" height="21"
+                                src="images/dist/icons/green__star.svg" alt="star" loading="lazy">
+                              Победил!
+                            </div>
+                          </div>
+
+                          <div class="cabinet__purchases__line">
+                            <div class="cabinet__purchases__item">
+                              ХХ.ХХ.2021
+                            </div>
+
+                            <div class="cabinet__purchases__item">
+                              Вам повезёт в следующий раз!
+                            </div>
+                          </div>
+
+                          <div class="cabinet__purchases__line">
+                            <div class="cabinet__purchases__item">
+                              ХХ.ХХ.2021
+                            </div>
+
+                            <div class="cabinet__purchases__item">
+                              Вам повезёт в следующий раз!
+                            </div>
+                          </div>
+
+                          <div class="cabinet__purchases__line">
+                            <div class="cabinet__purchases__item">
+                              ХХ.ХХ.2021
+                            </div>
+
+                            <div class="cabinet__purchases__item">
+                              Ждёт розыгрыша
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cabinet__box">
+                <div class="cabinet__box__wrapper">
+                  <h3 class="cabinet__box__title">
+                    Мои призы
+                  </h3>
+
+                  <div class="cabinet__content">
+                    <div class="cabinet__prizes">
+                      <div class="cabinet__prizes__title">
+                        Поздравляем!
+                      </div>
+
+                      <div class="cabinet__prizes__slider__wrapper">
+                        <div class="cabinet__prizes__slider" id="cabinetPrizesSlider">
+                          <div class="cabinet__prizes__slide">
+                            <img class="cabinet__prizes__logo" width="251" height="237"
+                              src="images/dist/cabinet/belvita.webp" alt="belvita" loading="lazy">
+                            <div class="cabinet__prizes__text">
+                              Вы выиграли запас belVita на месяц
+                            </div>
+                            <a href="#" class="btn cabinet__prizes__btn">
+                              получить
+                            </a>
+                          </div>
+
+                          <div class="cabinet__prizes__slide">
+                            <img class="cabinet__prizes__logo" width="251" height="237"
+                              src="images/dist/cabinet/belvita.webp" alt="belvita" loading="lazy">
+                            <div class="cabinet__prizes__text">
+                              Вы выиграли запас belVita на месяц
+                            </div>
+                            <a href="#" class="btn cabinet__prizes__btn">
+                              получить
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="cabinet__prizes__arrows">
+                          <button class="cabinet__prizes__arrow cabinet__prizes__arrow--prev" type="button"
+                            id="cabinetPrizesArrowPrev">
+                            <span></span>
+                          </button>
+
+                          <button class="cabinet__prizes__arrow cabinet__prizes__arrow--next" type="button"
+                            id="cabinetPrizesArrowNext">
+                            <span></span>
+                          </button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cabinet__footer">
+              <div class="cabinet__footer__text">
+                Следующий<br class="no-xl xs"> розыгрыш состоится
+              </div>
+
+              <div class="cabinet__footer__date">
+                ХХ.ХХ.2021
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="intro__ellipse"></div>
+  </div>
+
+</main>
+
+<footer class="footer" id="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<p class="footer__description">
+				Срок проведения акции, включая выдачу призов, с 01 августа 2021 по 31 декабря 2021 года. Срок совершения покупок
+				и регистрации чеков на сайте belvita.life c 01 августа 2021 по 30 сентября 2021, срок прохождения теста и
+				получения СОЖ-карты с 01 августа 2021 по 31 декабря 2021 года. Организатор Акции ООО "Мон'дэлис Русь".
+				Информацию об ОрганизатореАкции, о правилах ее проведения,количестве призов по результатам акции, сроках и месте
+				и порядке их получения можно посмотреть на сайте belvita.life. Количество призов ограничено. Акция проводится на
+				территории Российской Федерации и распространяется только на продукцию, купленнуюна территории Российской
+				Федерации. По условиям Клуба Перекрёсток 10 баллов = 1 рублю.
+			</p>
+
+			<div class="footer__wrapper">
+				<div class="contacts">
+					<a href="tel:8-800-555-8000" class="contacts__phone">
+						8-800-555-8000
+					</a>
+					<a href="mailto:info@belvita.life" class="contacts__email">
+						info@belvita.life
+					</a>
+				</div>
+
+				<div class="footer__center">
+
+					<nav class="footer__nav">
+						<ul class="footer__nav__list">
+							<li class="footer__nav__item">
+								<a href="#" class="footer__nav__link">
+									Политика конфиденциальности
+								</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" class="footer__nav__link">
+									Правила акции
+								</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" class="footer__nav__link">
+									Пользовательское соглашение
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="footer__copyright">
+						<img class="footer__copyright__img" width="132" height="48" src="images/dist/mondelez.svg" alt="mondelez"
+							loading="lazy">
+						<p class="footer__copyright__text">
+							ООО «Мон’дэлис Русь». Часть группы компаний Mondelēz International. Все права защищены.
+						</p>
+					</div>
+				</div>
+
+				<div class="social">
+					<a href="#" class="social__item social__item--vk" target="_blank">
+						<span></span>
+					</a>
+					<a href="#" class="social__item social__item--youtube" target="_blank">
+						<span></span>
+					</a>
+					<a href="#" class="social__item social__item--instagram" target="_blank">
+						<span></span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<picture decoding="async">
+		<source srcset="images/dist/footer__bg--mobile.svg" media="(max-width: 767px)">
+		<img class="footer__bg" src="images/dist/footer__bg.svg" alt="footer__bg" loading="lazy">
+	</picture>
+
+</footer>
+
+<script src="js/include/jquery.min.js"></script>
+<script src="js/include/slick.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
