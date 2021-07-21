@@ -1,0 +1,33 @@
+.result__inner {
+  margin-bottom: 90px;
+
+  .question__intro__number {
+    margin-bottom: 10px;
+  }
+}
+
+.result__wrapper {
+  margin-bottom: 30px;
+}
+
+.result__btn {
+  font-size: 18px;
+  line-height: 22px;
+
+  display: block;
+
+  margin: 0 auto;
+  padding: 17px 27px;
+  width: fit-content;
+}
+
+@media (max-width: $tablet) {
+  .result__inner {
+    .question__intro__bg {
+      top: 50%;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+}

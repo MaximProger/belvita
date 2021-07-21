@@ -1,0 +1,145 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &--inner {
+    .social__item {
+      margin-right: 10px;
+      span {
+        width: 40px;
+        height: 40px;
+      }
+
+      &--vk {
+        span {
+          background: url("../../images/dist/social/vk__inner.svg") no-repeat
+            center;
+        }
+      }
+
+      &--fa {
+        span {
+          background: url("../../images/dist/social/fa__inner.svg") no-repeat
+            center;
+        }
+      }
+
+      &--ok {
+        span {
+          background: url("../../images/dist/social/ok__inner.svg") no-repeat
+            center;
+        }
+      }
+
+      &--mail {
+        span {
+          background: url("../../images/dist/social/mail__inner.svg") no-repeat
+            center;
+        }
+      }
+    }
+  }
+}
+
+.social__item {
+  display: inline-block;
+
+  margin-right: 8px;
+
+  text-decoration: none;
+  transition: all 0.5s linear;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  span {
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+  }
+
+  &--vk {
+    span {
+      background: url("../../images/dist/social/vk.svg") no-repeat center;
+    }
+  }
+
+  &--youtube {
+    span {
+      background: url("../../images/dist/social/youtube.svg") no-repeat center;
+    }
+  }
+
+  &--instagram {
+    span {
+      background: url("../../images/dist/social/inst.svg") no-repeat center;
+    }
+  }
+}
+
+.social__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+
+  margin-bottom: 3px;
+}
+
+@media (max-width: $tablet) {
+  .social {
+    order: 2;
+
+    margin-bottom: 35px;
+
+    &--inner {
+      margin-bottom: 0;
+    }
+  }
+
+  .social__item {
+    margin-right: 14px;
+
+    &--vk {
+      span {
+        background: url("../../images/dist/social/vk--mobile.svg") no-repeat
+          center;
+      }
+    }
+
+    &--youtube {
+      span {
+        background: url("../../images/dist/social/youtube--mobile.svg")
+          no-repeat center;
+      }
+    }
+
+    &--instagram {
+      span {
+        background: url("../../images/dist/social/inst--mobile.svg") no-repeat
+          center;
+      }
+    }
+
+    span {
+      width: 52px;
+      height: 52px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+}
