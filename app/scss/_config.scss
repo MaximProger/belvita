@@ -1,0 +1,48 @@
+$green: #155b11;
+$green_light: #3bae2b;
+$orange: #ffab02;
+$violet: #46248a;
+
+// USER VARIABLES SECTION
+$fontsize: 16px; // Body Font Size
+$textcolor: $green; // Text Color
+$lineheight: 20px; // Document Line Height
+$userfont: "Gotham Pro", sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// Breakpoints
+$tablet: 1199px;
+$mobile: 767px;
+$mobile-sm: 374px;
+
+// FONTS LOAD SECTION
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: local($fname), url($furl) format("woff2");
+    font-display: swap;
+  }
+}
+
+@include font("Gotham Pro", normal, 300, "../fonts/GothamPro-Light.woff2");
+@include font("Gotham Pro", normal, 400, "../fonts/GothamPro.woff2");
+@include font("Gotham Pro", normal, 500, "../fonts/GothamPro-Medium.woff2");
+@include font("Gotham Pro", normal, 700, "../fonts/GothamPro-Bold.woff2");
+@include font("Gotham Pro", normal, 900, "../fonts/GothamPro-Black.woff2");
+
+@include font("Inter", normal, 500, "../fonts/Inter-Medium.woff2");
+
+@include font(
+  "OfficinaSansBookC",
+  normal,
+  400,
+  "../fonts/OfficinaSansBookC.woff2"
+);
+@include font(
+  "OfficinaSansBlackC",
+  normal,
+  900,
+  "../fonts/OfficinaSansBlackC.woff2"
+);

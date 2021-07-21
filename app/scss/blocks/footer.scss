@@ -1,0 +1,144 @@
+.footer {
+  position: relative;
+
+  padding: 30px 0;
+
+  background-color: #fff;
+}
+
+.footer__bg {
+  position: absolute;
+  top: -200px;
+  left: 0;
+
+  width: 100%;
+}
+
+.footer__inner {
+  position: relative;
+  z-index: 2;
+}
+
+.footer__description {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+
+  max-width: 755px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+
+  text-align: center;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.footer__nav {
+  margin-bottom: 30px;
+}
+
+.footer__nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__nav__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__nav__link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+
+  display: inline-block;
+
+  color: $violet;
+
+  transition: all 0.2s linear;
+
+  border-bottom: 1px solid $violet;
+
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+.footer__copyright__img {
+  margin-bottom: 20px;
+}
+
+.footer__copyright__text {
+  font-size: 12px;
+  line-height: 15px;
+
+  color: $violet;
+}
+
+@media (max-width: $tablet) {
+  .footer__bg {
+    top: -80px;
+  }
+
+  .footer__description {
+    margin-bottom: 25px;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .footer__center {
+    order: 3;
+  }
+}
+
+@media (max-width: $mobile) {
+  .footer__nav__list {
+    flex-direction: column;
+  }
+
+  .footer__nav__item {
+    margin-right: 0;
+    margin-bottom: 7px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__nav__link {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .footer__copyright__img {
+    width: 192px;
+    margin-bottom: 26px;
+  }
+
+  .footer__copyright__text {
+    max-width: 266px;
+  }
+}

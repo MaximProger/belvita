@@ -1,0 +1,345 @@
+// GENERAL PROJECT STYLES
+body {
+  font-family: $userfont;
+  font-size: $fontsize;
+  line-height: $lineheight;
+
+  position: relative;
+
+  min-width: 320px;
+  overflow-x: hidden;
+
+  color: $textcolor;
+  background: $orange;
+}
+
+.container {
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.noscroll {
+  overflow-y: hidden;
+}
+
+.no-xl {
+  display: none;
+}
+
+.btn {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+
+  padding: 10px 18px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  text-align: center;
+
+  color: #ffffff;
+  background: $green_light;
+  border-radius: 20px;
+  border: none;
+
+  &:hover {
+    background: lighten($color: $green_light, $amount: 6);
+  }
+}
+
+.logo {
+  padding-top: 6px;
+  padding-bottom: 16px;
+  margin-bottom: 27px;
+}
+
+.logo__item {
+  position: relative;
+
+  display: inline-block;
+
+  width: 158px;
+  height: 149px;
+}
+
+.logo__ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+
+  display: inline-block;
+
+  width: 214px;
+  height: 161.98px;
+
+  transform: translate(-50%, -50%);
+
+  background: #fecd0e;
+  filter: blur(60px);
+  border-radius: 50%;
+}
+
+.logo__perecrestok {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 2;
+
+  transform: translateX(-50%);
+}
+
+.contacts__phone {
+  font-family: "OfficinaSansBlackC";
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 26px;
+
+  display: block;
+
+  margin-bottom: 1px;
+
+  text-decoration: none;
+
+  color: $green;
+}
+
+.contacts__email {
+  font-family: "OfficinaSansBookC";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-decoration: none;
+  transition: all 0.2s linear;
+
+  color: $green;
+  border-bottom: 1px solid $green;
+
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.social__item {
+  display: inline-block;
+
+  margin-right: 8px;
+
+  text-decoration: none;
+  transition: all 0.5s linear;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  span {
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+  }
+
+  &--vk {
+    span {
+      background: url("../../images/dist/social/vk.svg") no-repeat center;
+    }
+  }
+
+  &--youtube {
+    span {
+      background: url("../../images/dist/social/youtube.svg") no-repeat center;
+    }
+  }
+
+  &--instagram {
+    span {
+      background: url("../../images/dist/social/inst.svg") no-repeat center;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .no-md {
+    display: none;
+  }
+
+  .md {
+    display: inline-block;
+  }
+
+  .burger {
+    font-size: 0;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+
+    height: 20px;
+    width: 28px;
+
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &--active {
+      .burger__item {
+        transform: rotate(45deg);
+
+        &::before {
+          top: 0;
+          transform: rotate(0);
+        }
+
+        &::after {
+          top: 0;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  .burger__item,
+  .burger__item::before,
+  .burger__item::after {
+    display: block;
+
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+    min-height: 4px;
+    max-height: 4px;
+
+    transition-duration: 0.25s;
+
+    background-color: $green;
+    border-radius: 5px;
+  }
+
+  .burger__item::before {
+    content: "";
+    top: -8px;
+  }
+
+  .burger__item::after {
+    content: "";
+    top: 8px;
+  }
+
+  .contacts {
+    order: 1;
+
+    margin-bottom: 30px;
+  }
+
+  .social {
+    order: 2;
+
+    margin-bottom: 35px;
+  }
+
+  .social__item {
+    margin-right: 14px;
+
+    &--vk {
+      span {
+        background: url("../../images/dist/social/vk--mobile.svg") no-repeat
+          center;
+      }
+    }
+
+    &--youtube {
+      span {
+        background: url("../../images/dist/social/youtube--mobile.svg")
+          no-repeat center;
+      }
+    }
+
+    &--instagram {
+      span {
+        background: url("../../images/dist/social/inst--mobile.svg") no-repeat
+          center;
+      }
+    }
+
+    span {
+      width: 52px;
+      height: 52px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .no-xs {
+    display: none;
+  }
+
+  .xs {
+    display: inline-block;
+  }
+
+  .btn {
+    font-size: 14px;
+    line-height: 22px;
+
+    padding: 10px 14px;
+  }
+
+  .logo {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .logo__item {
+    width: 136.92px;
+    height: 129.72px;
+  }
+
+  .logo__ellipse {
+    width: 186.34px;
+    height: 126.26px;
+  }
+
+  .logo__perecrestok {
+    left: auto;
+    right: -149px;
+    bottom: auto;
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: $mobile-sm) {
+  .btn {
+    font-size: 13px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

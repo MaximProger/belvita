@@ -1,0 +1,154 @@
+.nav {
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 32px;
+
+  position: relative;
+
+  display: inline-block;
+
+  transition: all 0.2s ease;
+
+  color: $green;
+  // color: #fff;
+
+  &:hover,
+  &--active {
+    color: #fff;
+
+    .nav__link__bg {
+      opacity: 1;
+    }
+  }
+}
+
+.nav__link__bg {
+  position: absolute;
+  top: 50%;
+  right: -17px;
+  z-index: 1;
+
+  display: block;
+
+  min-width: 150%;
+  height: 34px;
+
+  transition: all 0.2s ease;
+  transform: translateY(-50%);
+
+  opacity: 0;
+}
+
+.nav__link__text {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: $tablet) {
+  .nav {
+    width: 100%;
+
+    &--left {
+      position: absolute;
+      top: 78px;
+      left: 0;
+      z-index: 9;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      height: calc(100vh - 78px);
+
+      transition: all 0.2s linear;
+      transform: translateX(-100%);
+
+      background: #fff;
+
+      .nav__list {
+        flex-direction: column;
+      }
+
+      .nav__item {
+        margin-right: 0;
+        margin-bottom: 5vh;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &--right {
+      .nav__list {
+        justify-content: space-between;
+      }
+
+      .nav__item {
+        margin-right: 0;
+      }
+    }
+
+    &--active {
+      transform: translateX(0);
+    }
+  }
+
+  .nav__item {
+    &--lk {
+      order: 1;
+
+      height: 32px;
+
+      .nav__link {
+        line-height: 1;
+      }
+
+      .nav__link__text {
+        display: none;
+      }
+
+      .nav__link__bg {
+        display: none;
+      }
+    }
+
+    &--registration {
+      order: 2;
+    }
+
+    &--burger {
+      order: 3;
+    }
+  }
+
+  .nav__link__icon {
+    display: inline-block;
+
+    width: 25px;
+    height: 32px;
+
+    background: url("../../images/dist/icons/person.svg") no-repeat center;
+  }
+}
+
+@media (max-width: $mobile) {
+}
