@@ -2434,6 +2434,9 @@ span.error {
   .form__line .form__item:last-child {
     width: 100%;
   }
+  .form__item {
+    margin-bottom: 30px;
+  }
   .form__submit {
     font-size: 18px;
     line-height: 22px;
