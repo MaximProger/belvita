@@ -1,0 +1,260 @@
+.form__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 21px;
+
+  .form__item {
+    margin-bottom: 0;
+
+    &:first-child {
+      width: 205px;
+    }
+
+    &:last-child {
+      width: 279px;
+    }
+  }
+}
+
+.form__item {
+  margin-bottom: 21px;
+  width: 100%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__input {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  height: 62px;
+  width: 100%;
+  padding: 0 23px;
+
+  letter-spacing: -0.02em;
+
+  border: 1px solid $green;
+  box-sizing: border-box;
+  border-radius: 40px;
+  background: none;
+  color: $green;
+
+  &::placeholder {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: $green;
+  }
+
+  &--textarea {
+    height: 108px;
+    padding-top: 15px;
+
+    resize: none;
+
+    border-radius: 30px;
+  }
+}
+
+.form__submit {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  padding: 17px 46px;
+
+  &:disabled {
+    pointer-events: none;
+    cursor: auto;
+
+    opacity: 0.5;
+  }
+}
+
+.form__select {
+  &.select {
+    max-width: 100%;
+  }
+
+  .select2-container .select2-selection--single {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 62px;
+
+    background: transparent;
+    border: 1px solid $green;
+    border-radius: 40px;
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    padding-left: 27px;
+
+    text-align: left;
+    letter-spacing: -0.02em;
+
+    color: $green;
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__placeholder {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    text-align: left;
+    letter-spacing: -0.02em;
+
+    color: $green;
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 6px;
+    transition: all 0.2s linear;
+  }
+
+  .select2-container--open .select2-selection__arrow {
+    transform: rotate(-180deg);
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    margin: 0;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background: url(../../images/dist/icons/form__select__arrow.svg) center
+      no-repeat;
+    transition: all 0.2s linear;
+  }
+
+  .select2-dropdown {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    background: transparent;
+    border-radius: 0;
+    color: $green;
+    border: 1px solid $green;
+  }
+
+  .select2-container--open .select2-dropdown--below {
+    padding-top: 62px;
+    top: -62px;
+    border-radius: 40px;
+    border: 1px solid $green;
+    border-top: 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .select2-results__option {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    line-height: 1;
+    min-height: 20px;
+    padding: 15px 20px;
+    background: #ffc136;
+  }
+
+  .select2-container--default .select2-results__option[aria-selected="true"],
+  .select2-container--default
+    .select2-results__option--highlighted[aria-selected] {
+    background: lighten($color: $orange, $amount: 5);
+  }
+}
+
+span.error {
+  position: absolute;
+  font-size: 0;
+}
+
+.form__item input.error:not([type="checkbox"]),
+.form__item textarea.error,
+.form__item select.error + .select2-container .select2-selection--single,
+.form__item input.error:not([type="checkbox"]) {
+  color: #d2311a;
+  border: 1px solid #d2311a;
+}
+
+.form__item input.error[type="checkbox"] ~ .checkbox-text,
+.form__item input.error[type="checkbox"] ~ .checkbox-text a {
+  color: #d2311a;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+  .form__line {
+    flex-direction: column;
+
+    margin-bottom: 0;
+
+    .form__item {
+      margin-bottom: 30px;
+
+      &:first-child {
+        width: 100%;
+      }
+
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+
+  .form__submit {
+    font-size: 18px;
+    line-height: 22px;
+
+    display: block;
+
+    margin: 0 auto;
+    padding: 17px 46px;
+
+    border-radius: 30px;
+  }
+}
