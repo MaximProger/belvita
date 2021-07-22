@@ -130,4 +130,6 @@ $(document).ready(function () {
     const faqItem = $(this).parents(".faq__item");
     faqItem.toggleClass("faq__item--active");
   });
+
+  $("input[type=tel]").mask("+7 (999) 999 - 9999");
 });

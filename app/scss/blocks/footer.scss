@@ -8,7 +8,7 @@
 
 .footer__bg {
   position: absolute;
-  top: -100px;
+  top: -150px;
   left: 0;
 
   width: 100%;
@@ -90,6 +90,12 @@
   line-height: 15px;
 
   color: $violet;
+}
+
+@media (max-width: 1600px) {
+  .footer__bg {
+    top: -100px;
+  }
 }
 
 @media (max-width: $tablet) {
