@@ -35,19 +35,21 @@
   &:hover {
     opacity: 0.8;
   }
-
-  span {
-    display: inline-block;
-
-    width: 138px;
-    height: 121px;
-
-    background: url("../../images/dist/icons/play.svg") no-repeat center;
-  }
 }
 
 @media (max-width: $tablet) {
 }
 
 @media (max-width: $mobile) {
+  .video {
+    .container {
+      padding: 0;
+    }
+  }
+
+  .video__btn {
+    img {
+      max-width: 45px;
+    }
+  }
 }

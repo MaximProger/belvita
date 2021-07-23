@@ -107,4 +107,39 @@
 }
 
 @media (max-width: $mobile) {
+  .stock {
+    padding-top: 66px;
+  }
+
+  .stock__title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 22px;
+  }
+
+  .stock__slider__wrapper {
+    max-width: 278px;
+  }
+
+  .stock__slider__item {
+    display: block !important;
+
+    margin: 0 auto;
+  }
+
+  .stock__btn {
+    font-size: 16px;
+    line-height: 22px;
+
+    padding: 17px 64px;
+
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: $mobile-sm) {
+  .stock__slider__btn {
+    display: none !important;
+  }
 }

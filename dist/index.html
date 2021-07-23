@@ -172,15 +172,30 @@
             </div>
           </div>
 
-          <div class="intro__cloud">
+          <div class="intro__cloud intro__cloud--large">
+            <div class="intro__cloud__wrapper">
+
+              <p class="intro__cloud__text">
+                Пройдите тест<br> и получите персональную<br> СОЖ-карту от меня:
+              </p>
+
+              <a href="test.html" class="btn cloud__btn">
+                пройти тест
+              </a>
+
+            </div>
+          </div>
+
+          <!-- <div class="intro__cloud">
             <div class="intro__cloud__wrapper">
               <p class="intro__cloud__text">
                 <span class="text__accent">Привет!<br class="no-xl xs"> Я — Лиля Правда,</span><br> автор
                 бестселлера<br> «Привет,
                 Вселенная!».
               </p>
+
             </div>
-          </div>
+          </div> -->
 
           <div class="intro__photo__bg">
             <div class="intro__photo__bg__wrapper">
@@ -309,7 +324,7 @@
   <section class="stock">
     <div class="stock__inner">
       <h2 class="stock__title">
-        Продукты,<br> участвующие в акции
+        Продукты,<br> участвующие<br class="no-xl xs"> в акции
       </h2>
       <div class="stock__slider">
         <button class="stock__slider__btn stock__slider__btn--prev" id="stockSliderPrev">
@@ -434,7 +449,7 @@
         <img class="video__video" width="1000" height="563" src="images/dist/video.png" alt="video" loading="lazy">
 
         <button class="video__btn">
-          <span></span>
+          <img class="" width="138" height="121" src="images/dist/icons/play.svg" alt="play" loading="lazy">
         </button>
 
       </div>
@@ -451,7 +466,7 @@
               <img class="pass__title" width="330" height="187" src="images/dist/pass/title.svg" alt="title"
                 loading="lazy">
               <p class="pass__text">
-                Пройдите тест и получите персональную карту интересовот СОЖ-коуча — Лили Правды
+                Пройдите тест и получите персональную карту интересов <br class="no-xl xs">от СОЖ-коуча — Лили Правды
               </p>
               <a href="test.html" class="pass__btn btn">
                 пройти тест
@@ -463,7 +478,11 @@
           </div>
         </div>
 
-        <img class="pass__photo" width="649" height="539" src="images/dist/pass/photo.png" alt="photo" loading="lazy">
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/pass/photo--mobile.png" media="(max-width: 767px)">
+          <img class="pass__photo" width="649" height="539" src="images/dist/pass/photo.png" alt="photo" loading="lazy">
+        </picture>
+
       </div>
     </div>
 

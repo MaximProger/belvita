@@ -140,4 +140,45 @@
 }
 
 @media (max-width: $mobile) {
+  .pass {
+    padding-top: 17px;
+    padding-bottom: 420px;
+  }
+
+  .pass__title {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pass__content {
+    bottom: -220px;
+  }
+
+  .pass__text {
+    text-align: center;
+  }
+
+  .pass__bg {
+    top: 55%;
+
+    height: 490px;
+    width: 100%;
+
+    background: url("../../images/dist/pass/bg--mobile.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .pass__btn {
+    font-size: 16px;
+    line-height: 22px;
+
+    display: block;
+
+    width: fit-content;
+    padding: 17px 58px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
