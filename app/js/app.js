@@ -172,6 +172,8 @@ $(document).ready(function () {
   function closePopup() {
     $(".popup").removeClass("popup--show");
     $("html").removeClass("noscroll");
+    $("#burgerBtn").removeClass("burger--active");
+    $("#nav").removeClass("nav--active");
     overlay(false);
   }
 
