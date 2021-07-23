@@ -1,0 +1,123 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba($color: $orange, $alpha: 0.85);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  pointer-events: none;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &--show {
+    z-index: 999;
+    opacity: 1;
+    pointer-events: visible;
+  }
+}
+
+.popup__wrap {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.close-popup svg,
+.close-popup svg path {
+  transition: all 0.2s linear;
+}
+
+.popup__inner {
+  position: relative;
+  max-width: 350px;
+  margin: auto;
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.popup__title {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $green;
+  margin: 0 auto 30px;
+}
+
+.popup__form {
+  max-width: 290px;
+  width: 100%;
+  margin: auto;
+
+  .form__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.checkbox__item {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+.popup__btn {
+  font-size: 18px !important;
+  line-height: 22px !important;
+
+  padding: 16px 46px !important;
+  margin-bottom: 14px;
+
+  border-radius: 30px !important;
+
+  &:disabled {
+    pointer-events: none;
+    cursor: auto;
+
+    opacity: 0.5;
+  }
+
+  &.popup__close__btn {
+    margin-bottom: 0;
+  }
+}
+
+.popup__content__text {
+  font-size: 14px;
+  line-height: 18px;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+}

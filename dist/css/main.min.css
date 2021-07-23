@@ -1176,9 +1176,59 @@ span.error {
 .form__item textarea.error::placeholder {
   color: #d2311a;
 }
-.form__item input.error[type="checkbox"] ~ .checkbox-text,
-.form__item input.error[type="checkbox"] ~ .checkbox-text a {
+.form__item input.error[type="checkbox"] ~ .custom__checkbox__label {
   color: #d2311a;
+}
+.form__item input.error[type="checkbox"] ~ .custom__checkbox__label::before {
+  border-color: #d2311a;
+}
+.form__item input.error + .form__item__error,
+.form__item textarea.error + .form__item__error {
+  display: inline-block;
+}
+.form__item__error {
+  font-size: 12px;
+  line-height: 18px;
+  display: none;
+  width: 100%;
+  padding-left: 23px;
+  margin-top: 6px;
+  text-align: left;
+  letter-spacing: -0.02em;
+  color: #d2311a;
+}
+.form__item__description {
+  font-size: 12px;
+  line-height: 18px;
+  display: inline-block;
+  width: 100%;
+  padding-left: 23px;
+  margin-top: 6px;
+  text-align: left;
+  letter-spacing: -0.02em;
+  color: #155b11;
+  opacity: 0.5;
+}
+.form__item.checkbox__item {
+  margin-bottom: 17px;
+}
+.form__item.checkbox__item .custom__checkbox__label {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: left;
+}
+.form__box__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+.form__link {
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: underline;
+  text-align: center;
+  color: #155b11;
 }
 .header {
   position: relative;
@@ -1643,6 +1693,127 @@ span.error {
 .pass__decore--2 {
   top: 100px;
   right: 0;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(255, 171, 2, 0.85);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  pointer-events: none;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.popup--show {
+  z-index: 999;
+  opacity: 1;
+  pointer-events: visible;
+}
+.popup__wrap {
+  max-width: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+}
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+.close-popup svg,
+.close-popup svg path {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.popup__inner {
+  position: relative;
+  max-width: 350px;
+  margin: auto;
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+}
+.popup__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #155b11;
+  margin: 0 auto 30px;
+}
+.popup__form {
+  max-width: 290px;
+  width: 100%;
+  margin: auto;
+}
+.popup__form .form__item {
+  margin-bottom: 30px;
+}
+.popup__form .form__item:last-child {
+  margin-bottom: 0;
+}
+.popup__form .form__item.checkbox__item {
+  margin-bottom: 17px;
+}
+.popup__btn {
+  font-size: 18px !important;
+  line-height: 22px !important;
+  padding: 16px 46px !important;
+  margin-bottom: 14px;
+  border-radius: 30px !important;
+}
+.popup__btn:disabled {
+  pointer-events: none;
+  cursor: auto;
+  opacity: 0.5;
+}
+.popup__btn.popup__close__btn {
+  margin-bottom: 0;
+}
+.popup__content__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: -0.02em;
 }
 .product .cabinet__title {
   margin-bottom: 80px;

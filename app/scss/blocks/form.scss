@@ -225,9 +225,79 @@ span.error {
   color: #d2311a;
 }
 
-.form__item input.error[type="checkbox"] ~ .checkbox-text,
-.form__item input.error[type="checkbox"] ~ .checkbox-text a {
+.form__item input.error[type="checkbox"] ~ .custom__checkbox__label {
   color: #d2311a;
+
+  &::before {
+    border-color: #d2311a;
+  }
+}
+
+.form__item textarea.error + .form__item__error,
+.form__item input.error + .form__item__error {
+  display: inline-block;
+}
+
+.form__item__error {
+  font-size: 12px;
+  line-height: 18px;
+
+  display: none;
+
+  width: 100%;
+  padding-left: 23px;
+  margin-top: 6px;
+
+  text-align: left;
+  letter-spacing: -0.02em;
+
+  color: #d2311a;
+}
+
+.form__item__description {
+  font-size: 12px;
+  line-height: 18px;
+
+  display: inline-block;
+
+  width: 100%;
+  padding-left: 23px;
+  margin-top: 6px;
+
+  text-align: left;
+  letter-spacing: -0.02em;
+
+  color: $green;
+  opacity: 0.5;
+}
+
+.form__item {
+  &.checkbox__item {
+    margin-bottom: 17px;
+
+    .custom__checkbox__label {
+      justify-content: flex-start;
+
+      width: 100%;
+
+      text-align: left;
+    }
+  }
+}
+
+.form__box__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form__link {
+  font-size: 14px;
+  line-height: 24px;
+
+  text-decoration: underline;
+  text-align: center;
+
+  color: $green;
 }
 
 @media (max-width: $tablet) {

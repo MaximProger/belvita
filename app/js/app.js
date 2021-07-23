@@ -131,7 +131,8 @@ $(document).ready(function () {
     faqItem.toggleClass("faq__item--active");
   });
 
-  $("input[type=tel]").mask("+7 (999) 999 - 9999");
+  $("input[type=tel]").mask("8-999-999-9999");
+  $("#card_number").mask("9999-9999-9999-9999");
 
   $("#stockSlider")
     .not(".slick-initialized")
@@ -166,5 +167,54 @@ $(document).ready(function () {
 
     // $("#video").get(0).play();
     // $("#video").attr("controls", "controls");
+  });
+
+  function closePopup() {
+    $(".popup").removeClass("popup--show");
+    $("html").removeClass("noscroll");
+    overlay(false);
+  }
+
+  function openPopup(popupId) {
+    $(popupId).addClass("popup--show");
+    $("html").addClass("noscroll");
+    overlay(true);
+  }
+
+  $("[data-popup]").click(function (evt) {
+    evt.preventDefault();
+    let data = $(this).data("popup");
+    closePopup();
+    openPopup(data);
+  });
+
+  // $(document).on("click", function (evt) {
+  //   if (
+  //     !(
+  //       $(evt.target).parents(".popup__wrap").length ||
+  //       $(evt.target).hasClass("popup__wrap") ||
+  //       $(evt.target).data("popup")
+  //     )
+  //   ) {
+  //     closePopup();
+  //   }
+  // });
+
+  $(".popup__close__btn").click(function (evt) {
+    evt.preventDefault();
+
+    closePopup();
+  });
+
+  $(document).keydown((evt) => {
+    if (evt.keyCode == 27) {
+      closePopup();
+    }
+  });
+
+  $("#registrationForm").submit(function (evt) {
+    evt.preventDefault();
+
+    openPopup($("#successfulRegistration"));
   });
 });
