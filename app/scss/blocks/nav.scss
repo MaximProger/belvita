@@ -67,19 +67,22 @@
 
     &--left {
       position: absolute;
-      top: 78px;
+      top: 0;
       left: 0;
-      z-index: 9;
+      z-index: 6;
 
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      flex-direction: column;
 
       width: 100%;
-      height: calc(100vh - 78px);
+      height: 100vh;
+      padding-top: 46px;
 
       transition: all 0.2s linear;
       transform: translateX(-100%);
+      text-align: left;
 
       background: #fff;
 
@@ -89,10 +92,18 @@
 
       .nav__item {
         margin-right: 0;
-        margin-bottom: 5vh;
+        margin-bottom: 3.5vh;
 
         &:last-child {
           margin-bottom: 0;
+        }
+      }
+
+      .nav__link {
+        border-bottom: 2px solid transparent;
+
+        &--active {
+          border-color: $green;
         }
       }
     }
@@ -125,10 +136,6 @@
       .nav__link__text {
         display: none;
       }
-
-      .nav__link__bg {
-        display: none;
-      }
     }
 
     &--registration {
@@ -138,6 +145,37 @@
     &--burger {
       order: 3;
     }
+
+    &--cabinet {
+      .nav__link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .nav__link__icon {
+        width: 12px;
+        height: 14px;
+        margin-right: 7px;
+
+        background: url("../../images/dist/icons/person__small.svg") no-repeat
+          center;
+      }
+    }
+  }
+
+  .nav__link {
+    font-size: 20px;
+    line-height: 32px;
+
+    &:hover,
+    &--active {
+      color: $green;
+    }
+  }
+
+  .nav__link__img {
+    margin-right: 7px;
   }
 
   .nav__link__icon {
@@ -148,9 +186,53 @@
 
     background: url("../../images/dist/icons/person.svg") no-repeat center;
   }
+
+  .nav__link__bg {
+    display: none;
+  }
+
+  .nav__mobile__box {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    padding-bottom: 42px;
+
+    .nav__btn {
+      display: block;
+
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
 }
 
 @media (max-width: $mobile) {
+  .nav {
+    &--left {
+      align-items: flex-start;
+      .nav__list {
+        align-items: flex-start;
+        padding-left: 56px;
+      }
+    }
+  }
+
+  .nav__mobile__box__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    display: inline-block;
+
+    height: 185px;
+    width: 100%;
+
+    background: url("../../images/dist/nav__box__bg.png") no-repeat center;
+    background-size: cover !important;
+  }
 }
 
 @media (max-width: $mobile-sm) {
