@@ -234,6 +234,14 @@ body {
   background: url("../../images/dist/icons/search.svg") no-repeat center;
 }
 
+.first__display {
+  position: relative;
+}
+
+.main {
+  min-height: 80vh;
+}
+
 @media (max-width: $tablet) {
   .no-md {
     display: none;
@@ -353,14 +361,5 @@ body {
     top: 50%;
 
     transform: translateY(-50%);
-  }
-}
-
-@media (max-width: $mobile-sm) {
-  .btn {
-    font-size: 13px;
-
-    padding-left: 12px;
-    padding-right: 12px;
   }
 }

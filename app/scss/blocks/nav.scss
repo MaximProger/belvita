@@ -152,3 +152,12 @@
 
 @media (max-width: $mobile) {
 }
+
+@media (max-width: $mobile-sm) {
+  .nav__btn {
+    font-size: 13px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

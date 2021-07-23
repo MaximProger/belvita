@@ -132,4 +132,39 @@ $(document).ready(function () {
   });
 
   $("input[type=tel]").mask("+7 (999) 999 - 9999");
+
+  $("#stockSlider")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      centerMode: false,
+      autoplay: false,
+      prevArrow: $("#stockSliderPrev"),
+      nextArrow: $("#stockSliderNext"),
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+
+  $(".video__btn").click(function (evt) {
+    evt.preventDefault();
+
+    $(this).fadeOut();
+
+    // $("#video").get(0).play();
+    // $("#video").attr("controls", "controls");
+  });
 });

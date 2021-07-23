@@ -75,6 +75,8 @@
 
   margin: 0 auto;
   padding: 16px 61px;
+
+  border-radius: 30px;
 }
 
 @media (max-width: $tablet) {
@@ -122,5 +124,7 @@
     line-height: 22px;
 
     padding: 14px 42px;
+
+    border-radius: 30px;
   }
 }

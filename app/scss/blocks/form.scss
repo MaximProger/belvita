@@ -219,6 +219,12 @@ span.error {
   border: 1px solid #d2311a;
 }
 
+.form__item input.error::placeholder,
+.form__item textarea.error::placeholder,
+.form__item select.error + .select2-container .select2-selection__placeholder {
+  color: #d2311a;
+}
+
 .form__item input.error[type="checkbox"] ~ .checkbox-text,
 .form__item input.error[type="checkbox"] ~ .checkbox-text a {
   color: #d2311a;
