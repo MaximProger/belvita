@@ -46,6 +46,13 @@
       right: -36px;
     }
   }
+
+  &--mistake {
+    .intro__content {
+      padding-top: 59px;
+      max-width: 100%;
+    }
+  }
 }
 
 .intro__content {
@@ -285,6 +292,12 @@
     &--index {
       padding-bottom: 50px;
     }
+
+    &--mistake {
+      .intro__content {
+        padding-top: 150px;
+      }
+    }
   }
 
   .intro__test__title {
@@ -378,6 +391,12 @@
     &--index {
       .intro__content {
         padding-top: 138px;
+      }
+    }
+
+    &--mistake {
+      .intro__content {
+        padding-top: 141px;
       }
     }
 

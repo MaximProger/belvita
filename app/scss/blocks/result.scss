@@ -7,7 +7,8 @@
 }
 
 .result__wrapper {
-  margin-bottom: 30px;
+  position: relative;
+  z-index: 3;
 }
 
 .result__btn {
@@ -19,6 +20,8 @@
   margin: 0 auto;
   padding: 17px 27px;
   width: fit-content;
+
+  border-radius: 30px;
 }
 
 @media (max-width: $tablet) {
@@ -30,4 +33,12 @@
 }
 
 @media (max-width: $mobile) {
+  .result__btn {
+    font-size: 15px;
+    line-height: 22px;
+
+    padding: 14px 31px;
+
+    border-radius: 30px;
+  }
 }

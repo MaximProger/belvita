@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>
+		Главная
+	</title>
+	<meta name="description" content="Startup HTML">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/include/slick.css">
+	<link rel="stylesheet" href="css/include/select2.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="nav nav--left" id="nav">
+					<ul class="nav__list">
+						<li class="nav__item nav__item--cabinet no-xl md">
+							<a href="cabinet.html" class="nav__link">
+								<span class="nav__link__icon no-xl md"></span>
+								<span class="nav__link__text">
+									Личный кабинет
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="index.html" class="nav__link nav__link--active">
+								<span class="nav__link__text">
+									Главная
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="test.html" class="nav__link nav__link">
+								<span class="nav__link__text">
+									СОЖ-Тест
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="product.html" class="nav__link">
+								<span class="nav__link__text">
+									О Продукте
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="winners.html" class="nav__link">
+								<span class="nav__link__text">
+									Победители
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">
+								<span class="nav__link__text">
+									Правила
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="feedback.html" class="nav__link">
+								<span class="nav__link__text">
+									Обратная связь
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+					</ul>
+
+					<div class="nav__mobile__box no-xl md">
+						<a href="#" class="nav__btn btn" data-popup="#registrationPopup">
+							зарегистрировать карту
+						</a>
+
+						<span class="nav__mobile__box__bg"></span>
+					</div>
+				</div>
+
+				<div class="nav nav--right">
+					<ul class="nav__list">
+						<li class="nav__item nav__item--burger no-xl md">
+							<button class="burger" id="burgerBtn" type="button">
+								<span class="burger__item">Menu</span>
+							</button>
+						</li>
+
+						<li class="nav__item nav__item--registration">
+							<a href="#" class="nav__btn btn" data-popup="#registrationPopup">
+								зарегистрировать карту
+							</a>
+						</li>
+
+						<li class="nav__item nav__item--lk">
+							<a href="cabinet.html" class="nav__link">
+								<span class="nav__link__icon no-xl md"></span>
+								<span class="nav__link__text">
+									Личный кабинет
+								</span>
+								<img class="nav__link__bg" src="images/dist/nav__link__bg.svg" alt="img" loading="lazy">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<main class="main">
+
+  <div class="intro intro--mistake">
+    <div class="container">
+      <div class="intro__inner">
+        <div class="intro__content">
+          <a href="#" class="logo">
+            <span class="logo__item">
+              <picture decoding="async">
+                <source type="image/webp" srcset="images/dist/belvita.webp">
+                <img class="logo__belvita" width="158" height="149" src="images/dist/belvita.png" alt="belvita"
+                  loading="lazy">
+              </picture>
+              <span class="logo__ellipse"></span>
+
+              <img class="logo__perecrestok" width="149" height="34" src="images/dist/perecrestok.svg" alt="perecrestok"
+                loading="lazy">
+            </span>
+
+          </a>
+
+          <div class="mistake">
+
+            <div class="mistake__wrapper">
+              <picture decoding="async">
+                <source type="image/webp" srcset="images/dist/500--mobile.png" media="(max-width: 767px)">
+                <img class="mistake__img" width="940" height="298" src="images/dist/500.png" alt="500" loading="lazy">
+              </picture>
+
+              <h2 class="mistake__title">
+                Внутренняя<br class="no-xl xs"> ошибка сервера
+              </h2>
+            </div>
+
+            <p class="mistake__text">
+              Что-то пошло не так. <br class="no-xl xs">Попробуйте зайти позже.
+            </p>
+
+            <a href="index.html" class="btn mistake__btn">
+              на главную
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer" id="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<p class="footer__description">
+				Срок проведения акции, включая выдачу призов, с 01 августа 2021 по 31 декабря 2021 года. Срок совершения покупок
+				и регистрации чеков на сайте belvita.life c 01 августа 2021 по 30 сентября 2021, срок прохождения теста и
+				получения СОЖ-карты с 01 августа 2021 по 31 декабря 2021 года. Организатор Акции ООО "Мон'дэлис Русь".
+				Информацию об ОрганизатореАкции, о правилах ее проведения,количестве призов по результатам акции, сроках и месте
+				и порядке их получения можно посмотреть на сайте belvita.life. Количество призов ограничено. Акция проводится на
+				территории Российской Федерации и распространяется только на продукцию, купленнуюна территории Российской
+				Федерации. По условиям Клуба Перекрёсток 10 баллов = 1 рублю.
+			</p>
+
+			<div class="footer__wrapper">
+				<div class="contacts">
+					<a href="tel:8-800-555-8000" class="contacts__phone">
+						8-800-555-8000
+					</a>
+					<a href="mailto:info@belvita.life" class="contacts__email">
+						info@belvita.life
+					</a>
+				</div>
+
+				<div class="footer__center">
+
+					<nav class="footer__nav">
+						<ul class="footer__nav__list">
+							<li class="footer__nav__item">
+								<a href="#" class="footer__nav__link">
+									Политика конфиденциальности
+								</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" class="footer__nav__link">
+									Правила акции
+								</a>
+							</li>
+							<li class="footer__nav__item">
+								<a href="#" class="footer__nav__link">
+									Пользовательское соглашение
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="footer__copyright">
+						<img class="footer__copyright__img" width="132" height="48" src="images/dist/mondelez.svg" alt="mondelez"
+							loading="lazy">
+						<p class="footer__copyright__text">
+							ООО «Мон’дэлис Русь». Часть группы компаний Mondelēz International. Все права защищены.
+						</p>
+					</div>
+				</div>
+
+				<div class="social">
+					<a href="#" class="social__item social__item--vk" target="_blank">
+						<span></span>
+					</a>
+					<a href="#" class="social__item social__item--youtube" target="_blank">
+						<span></span>
+					</a>
+					<a href="#" class="social__item social__item--instagram" target="_blank">
+						<span></span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<picture decoding="async">
+		<source srcset="images/dist/footer__bg--mobile.svg" media="(max-width: 767px)">
+		<img class="footer__bg" src="images/dist/footer__bg.svg" alt="footer__bg" loading="lazy">
+	</picture>
+
+</footer>
+
+<div class="popups">
+	<div id="registrationPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Регистрация</div>
+				<form class="popup__form" novalidate="novalidate" id="registrationForm">
+					<div class="form__item">
+						<input name="fio" id="fio" type="text" class="form__input" placeholder="Ф.И.О." required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="email_2" id="email_2" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="phone_2" id="phone_2" type="tel" class="form__input" placeholder="Мобильный телефон">
+						<span class="form__item__description">
+							Необязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="card_number" id="card_number" type="text" class="form__input"
+							placeholder="Номер карты Клуба Перекрёсток" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="rules_aktition" name="rules_aktition" required checked>
+						<label for="rules_aktition" class="custom__checkbox__label">Я согласен с Правилами Акции</label>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="personal_data" name="personal_data" required checked>
+						<label for="personal_data" class="custom__checkbox__label">Я даю свое согласие на обработку моих
+							персональных данных в соответствии с Правилами акции и Положением об организации обработки ПД в ООО
+							«Мон’дэлис Русь».</label>
+					</div>
+
+					<div class="checkbox__item form__item">
+						<input type="checkbox" class="custom__checkbox" id="mailing" name="mailing">
+						<label for="mailing" class="custom__checkbox__label">Я согласен получать рассылки по акциям Mondelez</label>
+					</div>
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<a href="#" class="form__link" data-popup="#authPopup">
+								Авторизация
+							</a>
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="authPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Авторизация</div>
+				<form class="popup__form" novalidate="novalidate">
+
+					<div class="form__item">
+						<input name="email_3" id="email_3" type="email" class="form__input" placeholder="E-mail" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<input name="password" id="password" type="password" class="form__input" placeholder="Пароль" required>
+						<span class="form__item__error">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<div class="form__box__text">
+								Если вы в первый раз на сайте —<br> <a href="#" class="form__link"
+									data-popup="#registrationPopup">зарегистрируйтесь
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="successfulRegistration" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Регистрация <br>пройдена</div>
+
+				<div class="popup__content">
+					<p class="popup__content__text">
+						Пароль для входа на сайт<br> отправлен на e-mail, указанный<br> при регистрации.
+					</p>
+
+					<button class="btn popup__btn popup__close__btn">закрыть</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/include/jquery.min.js"></script>
+<script src="js/include/jquery.maskedinput.min.js"></script>
+<script src="js/include/jquery.validate.min.js"></script>
+<script src="js/include/slick.min.js"></script>
+<script src="js/include/select2.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!--#set var="title" value="Главная" -->
+<!--#include virtual="/parts/header.html" -->
+
+<main class="main">
+
+  <div class="intro intro--mistake">
+    <div class="container">
+      <div class="intro__inner">
+        <div class="intro__content">
+          <a href="#" class="logo">
+            <span class="logo__item">
+              <picture decoding="async">
+                <source type="image/webp" srcset="images/dist/belvita.webp">
+                <img class="logo__belvita" width="158" height="149" src="images/dist/belvita.png" alt="belvita"
+                  loading="lazy">
+              </picture>
+              <span class="logo__ellipse"></span>
+
+              <img class="logo__perecrestok" width="149" height="34" src="images/dist/perecrestok.svg" alt="perecrestok"
+                loading="lazy">
+            </span>
+
+          </a>
+
+          <div class="mistake">
+
+            <div class="mistake__wrapper">
+              <picture decoding="async">
+                <source type="image/webp" srcset="images/dist/500--mobile.png" media="(max-width: 767px)">
+                <img class="mistake__img" width="940" height="298" src="images/dist/500.png" alt="500" loading="lazy">
+              </picture>
+
+              <h2 class="mistake__title">
+                Внутренняя<br class="no-xl xs"> ошибка сервера
+              </h2>
+            </div>
+
+            <p class="mistake__text">
+              Что-то пошло не так. <br class="no-xl xs">Попробуйте зайти позже.
+            </p>
+
+            <a href="index.html" class="btn mistake__btn">
+              на главную
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!--#include virtual="/parts/footer.html" -->
