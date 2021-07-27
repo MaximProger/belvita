@@ -251,6 +251,14 @@ body {
   }
 }
 
+@media (max-width: 1600px) {
+  .main {
+    &--single {
+      margin-bottom: -130px;
+    }
+  }
+}
+
 @media (max-width: $tablet) {
   .no-md {
     display: none;

@@ -1380,11 +1380,15 @@ span.error {
   line-height: 27px;
   position: relative;
 }
+.intro__test__description__text {
+  position: relative;
+  z-index: 2;
+}
 .intro__test__description__bg {
   position: absolute;
   top: 50%;
   left: -95px;
-  z-index: -1;
+  z-index: 1;
   display: inline-block;
   width: 771px;
   height: 274px;
@@ -2703,6 +2707,9 @@ span.error {
   margin-right: 14px;
 }
 @media (max-width: 1600px) {
+  .main--single {
+    margin-bottom: -130px;
+  }
   .footer__bg {
     top: -100px;
   }

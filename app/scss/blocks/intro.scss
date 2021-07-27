@@ -80,11 +80,16 @@
   position: relative;
 }
 
+.intro__test__description__text {
+  position: relative;
+  z-index: 2;
+}
+
 .intro__test__description__bg {
   position: absolute;
   top: 50%;
   left: -95px;
-  z-index: -1;
+  z-index: 1;
 
   display: inline-block;
 
