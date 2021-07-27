@@ -1,268 +1,407 @@
-<!--#set var="title" value="Главная" -->
-<!--#include virtual="/parts/header.html" -->
+<!DOCTYPE html>
+<html lang="ru">
 
-<main class="main">
+<head>
 
-  <div class="intro intro--cabinet">
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+
+  <title>
+    <!--#echo var="title" -->
+  </title>
+  <meta name="description" content="Startup HTML">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="css/include/slick.css">
+  <link rel="stylesheet" href="css/include/select2.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+  <header class="header" id="header">
     <div class="container">
-      <div class="intro__inner">
-        <div class="intro__content">
+      <div class="header__inner">
+        <div class="nav nav--left" id="nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--cabinet no-xl md">
+              <a href="cabinet.html" class="nav__link">
+                <span class="nav__link__icon no-xl md"></span>
+                <span class="nav__link__text">
+                  Личный кабинет
+                </span>
+                <img width="174" height="34" class="nav__link__bg nav__link__bg--7"
+                  src="images/dist/nav__link__bg_7.svg" alt="img" loading="lazy">
+              </a>
+            </li>
 
-          <a href="#" class="logo">
-            <span class="logo__item">
-              <img class="logo__belvita" width="158" height="149" src="images/logo.png" alt="belvita" loading="lazy">
-              <span class="logo__ellipse"></span>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <span class="nav__link__text">
+                  Главная
+                </span>
+                <img width="164" height="34" class="nav__link__bg nav__link__bg--1"
+                  src="images/dist/nav__link__bg_1.svg" alt="img" loading="lazy">
+              </a>
+            </li>
 
-              <img class="logo__perecrestok" width="149" height="34" src="images/dist/perecrestok.svg" alt="perecrestok"
-                loading="lazy">
-            </span>
-          </a>
+            <li class="nav__item">
+              <a href="test.html" class="nav__link">
+                <span class="nav__link__text">
+                  СОЖ-Тест
+                </span>
+                <img width="175" height="34" class="nav__link__bg nav__link__bg--2"
+                  src="images/dist/nav__link__bg_2.svg" alt="img" loading="lazy">
+              </a>
+            </li>
 
-          <div class="winners cabinet">
-            <div class="cabinet__head">
-              <h2 class="cabinet__title">
-                <span class="cabinet__title__text">
+            <li class="nav__item">
+              <a href="product.html" class="nav__link">
+                <span class="nav__link__text">
+                  О Продукте
+                </span>
+                <img width="148" height="34" class="nav__link__bg nav__link__bg--3"
+                  src="images/dist/nav__link__bg_3.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="winners.html" class="nav__link  nav__link--active">
+                <span class="nav__link__text">
                   Победители
                 </span>
-                <span class="cabinet__title__bg"></span>
-              </h2>
+                <img width="148" height="34" class="nav__link__bg nav__link__bg--4"
+                  src="images/dist/nav__link__bg_4.svg" alt="img" loading="lazy">
+              </a>
+            </li>
 
-              <div class="cabinet__info">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <span class="nav__link__text">
+                  Правила
+                </span>
+                <img width="164" height="34" class="nav__link__bg nav__link__bg--5" src="images/dist/nav__link__bg.svg"
+                  alt="img" loading="lazy">
+              </a>
+            </li>
 
-                <div class="winners__search search">
-                  <form id="searchForm" name="searchForm" class="search__form">
-                    <input name="search" id="search" type="tel" class="search__input"
-                      placeholder="Поиск по номеру телефона" required>
+            <li class="nav__item">
+              <a href="feedback.html" class="nav__link">
+                <span class="nav__link__text">
+                  Обратная связь
+                </span>
+                <img width="162" height="34" class="nav__link__bg nav__link__bg--6"
+                  src="images/dist/nav__link__bg_6.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+          </ul>
 
-                    <button class="search__btn" type="submit">
-                      <span class="search__icon"></span>
-                    </button>
-                  </form>
+          <div class="nav__mobile__box no-xl md">
+            <a href="#" class="nav__btn btn" data-popup="#registrationPopup">
+              зарегистрировать карту
+            </a>
+
+            <span class="nav__mobile__box__bg"></span>
+          </div>
+        </div>
+
+        <div class="nav nav--right">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--burger no-xl md">
+              <button class="burger" id="burgerBtn" type="button">
+                <span class="burger__item">Menu</span>
+              </button>
+            </li>
+
+            <li class="nav__item nav__item--registration">
+              <a href="#" class="nav__btn btn" data-popup="#registrationPopup">
+                зарегистрировать карту
+              </a>
+            </li>
+
+            <li class="nav__item nav__item--lk">
+              <a href="cabinet.html" class="nav__link">
+                <span class="nav__link__icon no-xl md"></span>
+                <span class="nav__link__text">
+                  Личный кабинет
+                </span>
+                <img width="175" height="34" class="nav__link__bg nav__link__bg--7"
+                  src="images/dist/nav__link__bg_7.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="intro intro--cabinet">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+
+            <a href="#" class="logo">
+              <span class="logo__item">
+                <img class="logo__belvita" width="158" height="149" src="images/logo.png" alt="belvita" loading="lazy">
+                <span class="logo__ellipse"></span>
+
+                <img class="logo__perecrestok" width="149" height="34" src="images/dist/perecrestok.svg"
+                  alt="perecrestok" loading="lazy">
+              </span>
+            </a>
+
+            <div class="winners cabinet">
+              <div class="cabinet__head">
+                <h2 class="cabinet__title">
+                  <span class="cabinet__title__text">
+                    Победители
+                  </span>
+                  <span class="cabinet__title__bg"></span>
+                </h2>
+
+                <div class="cabinet__info">
+
+                  <div class="winners__search search">
+                    <form id="searchForm" name="searchForm" class="search__form">
+                      <input name="search" id="search" type="tel" class="search__input"
+                        placeholder="Поиск по номеру телефона" required>
+
+                      <button class="search__btn" type="submit">
+                        <span class="search__icon"></span>
+                      </button>
+                    </form>
+                  </div>
+
+
+                  <div class="winners__inner__title">
+                    Розыгрыш
+                  </div>
+
+                  <div class="select winners__select">
+                    <select name="dateOfDrawing" data-placeholder="ХХ.ХХ.2021 - ХХ.ХХ.2021" required>
+                      <option value=""></option>
+                      <option value="1">ХХ.ХХ.2021 - ХХ.ХХ.2021</option>
+                      <option value="2">ХХ.ХХ.2021 - ХХ.ХХ.2021</option>
+                      <option value="3">ХХ.ХХ.2021 - ХХ.ХХ.2021</option>
+                      <option value="4">ХХ.ХХ.2021 - ХХ.ХХ.2021</option>
+                    </select>
+
+                    <img class="select__icon" width="20" height="20" src="images/dist/icons/calendar.svg" alt="calendar"
+                      loading="lazy">
+                  </div>
+
                 </div>
 
 
-                <div class="winners__inner__title">
-                  Розыгрыш
-                </div>
-
-                <div class="select winners__select">
-                  <select name="dateOfDrawing" data-placeholder="ХХ.ХХ.2021 - ХХ.ХХ.2021" required>
-                    <option value=""></option>
-                    <option value="1">ХХ.ХХ.2021 - ХХ.ХХ.2021</option>
-                    <option value="2">ХХ.ХХ.2021 - ХХ.ХХ.2021</option>
-                    <option value="3">ХХ.ХХ.2021 - ХХ.ХХ.2021</option>
-                    <option value="4">ХХ.ХХ.2021 - ХХ.ХХ.2021</option>
-                  </select>
-
-                  <img class="select__icon" width="20" height="20" src="images/dist/icons/calendar.svg" alt="calendar"
-                    loading="lazy">
-                </div>
-
-              </div>
-
-
-              <div class="winners__table__container">
-                <div class="winners__table">
-                  <div class="winners__table__wrapper">
-                    <div class="winners__table__head">
-                      <div class="winners__table__item">
-                        Имя
-                      </div>
-
-                      <div class="winners__table__item">
-                        Телефон
-                      </div>
-
-                      <div class="winners__table__item">
-                        Дата
-                      </div>
-
-                      <div class="winners__table__item">
-                        Приз
-                      </div>
-                    </div>
-
-                    <div class="winners__table__body">
-                      <div class="winners__table__line">
+                <div class="winners__table__container">
+                  <div class="winners__table">
+                    <div class="winners__table__wrapper">
+                      <div class="winners__table__head">
                         <div class="winners__table__item">
-                          Мария В.
+                          Имя
                         </div>
 
                         <div class="winners__table__item">
-                          +7 (***) ***-1122
+                          Телефон
                         </div>
 
                         <div class="winners__table__item">
-                          ХХ.ХХ.2021
+                          Дата
                         </div>
 
-                        <div class="winners__table__item winners__table__item--flex">
-                          <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/1.png"
-                            alt="icon" loading="lazy">
-                          Запас belVita<br> на месяц
+                        <div class="winners__table__item">
+                          Приз
                         </div>
                       </div>
 
-                      <div class="winners__table__line">
-                        <div class="winners__table__item">
-                          Владимир Л.
+                      <div class="winners__table__body">
+                        <div class="winners__table__line">
+                          <div class="winners__table__item">
+                            Мария В.
+                          </div>
+
+                          <div class="winners__table__item">
+                            +7 (***) ***-1122
+                          </div>
+
+                          <div class="winners__table__item">
+                            ХХ.ХХ.2021
+                          </div>
+
+                          <div class="winners__table__item winners__table__item--flex">
+                            <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/1.png"
+                              alt="icon" loading="lazy">
+                            Запас belVita<br> на месяц
+                          </div>
                         </div>
 
-                        <div class="winners__table__item">
-                          +7 (***) ***-1122
+                        <div class="winners__table__line">
+                          <div class="winners__table__item">
+                            Владимир Л.
+                          </div>
+
+                          <div class="winners__table__item">
+                            +7 (***) ***-1122
+                          </div>
+
+                          <div class="winners__table__item">
+                            ХХ.ХХ.2021
+                          </div>
+
+                          <div class="winners__table__item winners__table__item--flex">
+                            <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/2.png"
+                              alt="icon" loading="lazy">
+                            Фитнес-<br>трекер
+                          </div>
                         </div>
 
-                        <div class="winners__table__item">
-                          ХХ.ХХ.2021
+                        <div class="winners__table__line">
+                          <div class="winners__table__item">
+                            Анастасия С.
+                          </div>
+
+                          <div class="winners__table__item">
+                            +7 (***) ***-1122
+                          </div>
+
+                          <div class="winners__table__item">
+                            ХХ.ХХ.2021
+                          </div>
+
+                          <div class="winners__table__item winners__table__item--flex">
+                            <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/3.png"
+                              alt="icon" loading="lazy">
+                            Планшет
+                          </div>
                         </div>
 
-                        <div class="winners__table__item winners__table__item--flex">
-                          <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/2.png"
-                            alt="icon" loading="lazy">
-                          Фитнес-<br>трекер
+                        <div class="winners__table__line">
+                          <div class="winners__table__item">
+                            Алексей Р.
+                          </div>
+
+                          <div class="winners__table__item">
+                            +7 (***) ***-1122
+                          </div>
+
+                          <div class="winners__table__item">
+                            ХХ.ХХ.2021
+                          </div>
+
+                          <div class="winners__table__item winners__table__item--flex">
+                            <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/4.png"
+                              alt="icon" loading="lazy">
+                            Электро<br class="no-xl xs">самокат
+                          </div>
                         </div>
+
+
+                        <div class="winners__table__line">
+                          <div class="winners__table__item">
+                            Мария В.
+                          </div>
+
+                          <div class="winners__table__item">
+                            +7 (***) ***-1122
+                          </div>
+
+                          <div class="winners__table__item">
+                            ХХ.ХХ.2021
+                          </div>
+
+                          <div class="winners__table__item winners__table__item--flex">
+                            <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/1.png"
+                              alt="icon" loading="lazy">
+                            Запас belVita<br> на месяц
+                          </div>
+                        </div>
+
+                        <div class="winners__table__line">
+                          <div class="winners__table__item">
+                            Владимир Л.
+                          </div>
+
+                          <div class="winners__table__item">
+                            +7 (***) ***-1122
+                          </div>
+
+                          <div class="winners__table__item">
+                            ХХ.ХХ.2021
+                          </div>
+
+                          <div class="winners__table__item winners__table__item--flex">
+                            <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/2.png"
+                              alt="icon" loading="lazy">
+                            Фитнес-<br>трекер
+                          </div>
+                        </div>
+
+                        <div class="winners__table__line">
+                          <div class="winners__table__item">
+                            Анастасия С.
+                          </div>
+
+                          <div class="winners__table__item">
+                            +7 (***) ***-1122
+                          </div>
+
+                          <div class="winners__table__item">
+                            ХХ.ХХ.2021
+                          </div>
+
+                          <div class="winners__table__item winners__table__item--flex">
+                            <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/3.png"
+                              alt="icon" loading="lazy">
+                            Планшет
+                          </div>
+                        </div>
+
+                        <div class="winners__table__line">
+                          <div class="winners__table__item">
+                            Алексей Р.
+                          </div>
+
+                          <div class="winners__table__item">
+                            +7 (***) ***-1122
+                          </div>
+
+                          <div class="winners__table__item">
+                            ХХ.ХХ.2021
+                          </div>
+
+                          <div class="winners__table__item winners__table__item--flex">
+                            <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/4.png"
+                              alt="icon" loading="lazy">
+                            Электро<br class="no-xl xs">самокат
+                          </div>
+                        </div>
+
                       </div>
-
-                      <div class="winners__table__line">
-                        <div class="winners__table__item">
-                          Анастасия С.
-                        </div>
-
-                        <div class="winners__table__item">
-                          +7 (***) ***-1122
-                        </div>
-
-                        <div class="winners__table__item">
-                          ХХ.ХХ.2021
-                        </div>
-
-                        <div class="winners__table__item winners__table__item--flex">
-                          <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/3.png"
-                            alt="icon" loading="lazy">
-                          Планшет
-                        </div>
-                      </div>
-
-                      <div class="winners__table__line">
-                        <div class="winners__table__item">
-                          Алексей Р.
-                        </div>
-
-                        <div class="winners__table__item">
-                          +7 (***) ***-1122
-                        </div>
-
-                        <div class="winners__table__item">
-                          ХХ.ХХ.2021
-                        </div>
-
-                        <div class="winners__table__item winners__table__item--flex">
-                          <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/4.png"
-                            alt="icon" loading="lazy">
-                          Электро<br class="no-xl xs">самокат
-                        </div>
-                      </div>
-
-
-                      <div class="winners__table__line">
-                        <div class="winners__table__item">
-                          Мария В.
-                        </div>
-
-                        <div class="winners__table__item">
-                          +7 (***) ***-1122
-                        </div>
-
-                        <div class="winners__table__item">
-                          ХХ.ХХ.2021
-                        </div>
-
-                        <div class="winners__table__item winners__table__item--flex">
-                          <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/1.png"
-                            alt="icon" loading="lazy">
-                          Запас belVita<br> на месяц
-                        </div>
-                      </div>
-
-                      <div class="winners__table__line">
-                        <div class="winners__table__item">
-                          Владимир Л.
-                        </div>
-
-                        <div class="winners__table__item">
-                          +7 (***) ***-1122
-                        </div>
-
-                        <div class="winners__table__item">
-                          ХХ.ХХ.2021
-                        </div>
-
-                        <div class="winners__table__item winners__table__item--flex">
-                          <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/2.png"
-                            alt="icon" loading="lazy">
-                          Фитнес-<br>трекер
-                        </div>
-                      </div>
-
-                      <div class="winners__table__line">
-                        <div class="winners__table__item">
-                          Анастасия С.
-                        </div>
-
-                        <div class="winners__table__item">
-                          +7 (***) ***-1122
-                        </div>
-
-                        <div class="winners__table__item">
-                          ХХ.ХХ.2021
-                        </div>
-
-                        <div class="winners__table__item winners__table__item--flex">
-                          <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/3.png"
-                            alt="icon" loading="lazy">
-                          Планшет
-                        </div>
-                      </div>
-
-                      <div class="winners__table__line">
-                        <div class="winners__table__item">
-                          Алексей Р.
-                        </div>
-
-                        <div class="winners__table__item">
-                          +7 (***) ***-1122
-                        </div>
-
-                        <div class="winners__table__item">
-                          ХХ.ХХ.2021
-                        </div>
-
-                        <div class="winners__table__item winners__table__item--flex">
-                          <img class="winners__table__icon" width="47" height="47" src="images/dist/winners/4.png"
-                            alt="icon" loading="lazy">
-                          Электро<br class="no-xl xs">самокат
-                        </div>
-                      </div>
-
                     </div>
                   </div>
                 </div>
+
               </div>
+
 
             </div>
 
 
           </div>
 
-
         </div>
-
       </div>
+
+      <div class="intro__ellipse"></div>
     </div>
 
-    <div class="intro__ellipse"></div>
-  </div>
+  </main>
 
-</main>
-
-<!--#include virtual="/parts/footer.html" -->
+  <!--#include virtual="/parts/footer.html" -->

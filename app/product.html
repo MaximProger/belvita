@@ -1,143 +1,282 @@
-<!--#set var="title" value="Главная" -->
-<!--#include virtual="/parts/header.html" -->
+<!DOCTYPE html>
+<html lang="ru">
 
-<main class="main">
+<head>
 
-  <div class="intro intro--cabinet">
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+
+  <title>
+    <!--#echo var="title" -->
+  </title>
+  <meta name="description" content="Startup HTML">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="css/include/slick.css">
+  <link rel="stylesheet" href="css/include/select2.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+  <header class="header" id="header">
     <div class="container">
-      <div class="intro__inner">
-        <div class="intro__content">
-
-          <a href="#" class="logo">
-            <span class="logo__item">
-              <img class="logo__belvita" width="158" height="149" src="images/logo.png" alt="belvita" loading="lazy">
-              <span class="logo__ellipse"></span>
-
-              <img class="logo__perecrestok" width="149" height="34" src="images/dist/perecrestok.svg" alt="perecrestok"
-                loading="lazy">
-            </span>
-          </a>
-
-          <div class="product cabinet">
-            <div class="cabinet__head">
-              <h2 class="cabinet__title">
-                <span class="cabinet__title__text">
-                  Продукт
+      <div class="header__inner">
+        <div class="nav nav--left" id="nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--cabinet no-xl md">
+              <a href="cabinet.html" class="nav__link">
+                <span class="nav__link__icon no-xl md"></span>
+                <span class="nav__link__text">
+                  Личный кабинет
                 </span>
-                <span class="cabinet__title__bg"></span>
-              </h2>
+                <img width="174" height="34" class="nav__link__bg nav__link__bg--7"
+                  src="images/dist/nav__link__bg_7.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <span class="nav__link__text">
+                  Главная
+                </span>
+                <img width="164" height="34" class="nav__link__bg nav__link__bg--1"
+                  src="images/dist/nav__link__bg_1.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="test.html" class="nav__link">
+                <span class="nav__link__text">
+                  СОЖ-Тест
+                </span>
+                <img width="175" height="34" class="nav__link__bg nav__link__bg--2"
+                  src="images/dist/nav__link__bg_2.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="product.html" class="nav__link  nav__link--active">
+                <span class="nav__link__text">
+                  О Продукте
+                </span>
+                <img width="148" height="34" class="nav__link__bg nav__link__bg--3"
+                  src="images/dist/nav__link__bg_3.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="winners.html" class="nav__link">
+                <span class="nav__link__text">
+                  Победители
+                </span>
+                <img width="148" height="34" class="nav__link__bg nav__link__bg--4"
+                  src="images/dist/nav__link__bg_4.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <span class="nav__link__text">
+                  Правила
+                </span>
+                <img width="164" height="34" class="nav__link__bg nav__link__bg--5" src="images/dist/nav__link__bg.svg"
+                  alt="img" loading="lazy">
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="feedback.html" class="nav__link">
+                <span class="nav__link__text">
+                  Обратная связь
+                </span>
+                <img width="162" height="34" class="nav__link__bg nav__link__bg--6"
+                  src="images/dist/nav__link__bg_6.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav__mobile__box no-xl md">
+            <a href="#" class="nav__btn btn" data-popup="#registrationPopup">
+              зарегистрировать карту
+            </a>
+
+            <span class="nav__mobile__box__bg"></span>
+          </div>
+        </div>
+
+        <div class="nav nav--right">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--burger no-xl md">
+              <button class="burger" id="burgerBtn" type="button">
+                <span class="burger__item">Menu</span>
+              </button>
+            </li>
+
+            <li class="nav__item nav__item--registration">
+              <a href="#" class="nav__btn btn" data-popup="#registrationPopup">
+                зарегистрировать карту
+              </a>
+            </li>
+
+            <li class="nav__item nav__item--lk">
+              <a href="cabinet.html" class="nav__link">
+                <span class="nav__link__icon no-xl md"></span>
+                <span class="nav__link__text">
+                  Личный кабинет
+                </span>
+                <img width="175" height="34" class="nav__link__bg nav__link__bg--7"
+                  src="images/dist/nav__link__bg_7.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="intro intro--cabinet">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+
+            <a href="#" class="logo">
+              <span class="logo__item">
+                <img class="logo__belvita" width="158" height="149" src="images/logo.png" alt="belvita" loading="lazy">
+                <span class="logo__ellipse"></span>
+
+                <img class="logo__perecrestok" width="149" height="34" src="images/dist/perecrestok.svg"
+                  alt="perecrestok" loading="lazy">
+              </span>
+            </a>
+
+            <div class="product cabinet">
+              <div class="cabinet__head">
+                <h2 class="cabinet__title">
+                  <span class="cabinet__title__text">
+                    Продукт
+                  </span>
+                  <span class="cabinet__title__bg"></span>
+                </h2>
 
 
 
-              <div class="product__body">
-                <div class="product__inner">
-                  <div class="product__card">
-                    <div class="product__card__wrapper">
-                      <h3 class="product__card__title">
-                        Печенье belVita Утреннее витаминизированное<br class="no-xs"> с какао
-                      </h3>
-                      <img class="product__card__img" width="278" height="157" src="images/dist/product/1.png"
-                        alt="product" loading="lazy">
-                      <span class="product__card__size">
-                        225 г
-                      </span>
+                <div class="product__body">
+                  <div class="product__inner">
+                    <div class="product__card">
+                      <div class="product__card__wrapper">
+                        <h3 class="product__card__title">
+                          Печенье belVita Утреннее витаминизированное<br class="no-xs"> с какао
+                        </h3>
+                        <img class="product__card__img" width="278" height="157" src="images/dist/product/1.png"
+                          alt="product" loading="lazy">
+                        <span class="product__card__size">
+                          225 г
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="product__card">
-                    <div class="product__card__wrapper">
-                      <h3 class="product__card__title">
-                        Печенье belVita Утреннее витаминизированное с фундуком и мёдом
-                      </h3>
-                      <img class="product__card__img" width="278" height="158" src="images/dist/product/2.png"
-                        alt="product" loading="lazy">
-                      <span class="product__card__size">
-                        225 г
-                      </span>
+                    <div class="product__card">
+                      <div class="product__card__wrapper">
+                        <h3 class="product__card__title">
+                          Печенье belVita Утреннее витаминизированное с фундуком и мёдом
+                        </h3>
+                        <img class="product__card__img" width="278" height="158" src="images/dist/product/2.png"
+                          alt="product" loading="lazy">
+                        <span class="product__card__size">
+                          225 г
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="product__card">
-                    <div class="product__card__wrapper">
-                      <h3 class="product__card__title">
-                        Печенье belVita Утреннее Мультизлаковое
-                      </h3>
-                      <img class="product__card__img" width="278" height="162" src="images/dist/product/3.png"
-                        alt="product" loading="lazy">
-                      <span class="product__card__size">
-                        225 г
-                      </span>
+                    <div class="product__card">
+                      <div class="product__card__wrapper">
+                        <h3 class="product__card__title">
+                          Печенье belVita Утреннее Мультизлаковое
+                        </h3>
+                        <img class="product__card__img" width="278" height="162" src="images/dist/product/3.png"
+                          alt="product" loading="lazy">
+                        <span class="product__card__size">
+                          225 г
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="product__card">
-                    <div class="product__card__wrapper">
-                      <h3 class="product__card__title">
-                        Печенье belvita Утреннее Сэндвич витаминное с цельными злаками и йогуртовой начинкой
-                      </h3>
-                      <img class="product__card__img" width="278" height="162" src="images/dist/product/4.png"
-                        alt="product" loading="lazy">
-                      <span class="product__card__size">
-                        253 г
-                      </span>
+                    <div class="product__card">
+                      <div class="product__card__wrapper">
+                        <h3 class="product__card__title">
+                          Печенье belvita Утреннее Сэндвич витаминное с цельными злаками и йогуртовой начинкой
+                        </h3>
+                        <img class="product__card__img" width="278" height="162" src="images/dist/product/4.png"
+                          alt="product" loading="lazy">
+                        <span class="product__card__size">
+                          253 г
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="product__card">
-                    <div class="product__card__wrapper">
-                      <h3 class="product__card__title">
-                        Печенье belvita Утреннее Сэндвич витаминное с какао
-                      </h3>
-                      <img class="product__card__img" width="278" height="158" src="images/dist/product/5.png"
-                        alt="product" loading="lazy">
-                      <span class="product__card__size">
-                        253 г
-                      </span>
+                    <div class="product__card">
+                      <div class="product__card__wrapper">
+                        <h3 class="product__card__title">
+                          Печенье belvita Утреннее Сэндвич витаминное с какао
+                        </h3>
+                        <img class="product__card__img" width="278" height="158" src="images/dist/product/5.png"
+                          alt="product" loading="lazy">
+                        <span class="product__card__size">
+                          253 г
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="product__card">
-                    <div class="product__card__wrapper">
-                      <h3 class="product__card__title">
-                        Печенье belVita Утреннее Софт Бэйкс с цельнозерновыми злаками с клубничной начинкой
-                      </h3>
-                      <img class="product__card__img" width="245" height="140" src="images/dist/product/6.png"
-                        alt="product" loading="lazy">
-                      <span class="product__card__size">
-                        250 г
-                      </span>
+                    <div class="product__card">
+                      <div class="product__card__wrapper">
+                        <h3 class="product__card__title">
+                          Печенье belVita Утреннее Софт Бэйкс с цельнозерновыми злаками с клубничной начинкой
+                        </h3>
+                        <img class="product__card__img" width="245" height="140" src="images/dist/product/6.png"
+                          alt="product" loading="lazy">
+                        <span class="product__card__size">
+                          250 г
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="product__card">
-                    <div class="product__card__wrapper">
-                      <h3 class="product__card__title">
-                        Печенье belVita Утреннее Софт Бэйкс с цельнозерновыми злаками и начинкой с какао
-                      </h3>
-                      <img class="product__card__img" width="245" height="140" src="images/dist/product/7.png"
-                        alt="product" loading="lazy">
-                      <span class="product__card__size">
-                        250 г
-                      </span>
+                    <div class="product__card">
+                      <div class="product__card__wrapper">
+                        <h3 class="product__card__title">
+                          Печенье belVita Утреннее Софт Бэйкс с цельнозерновыми злаками и начинкой с какао
+                        </h3>
+                        <img class="product__card__img" width="245" height="140" src="images/dist/product/7.png"
+                          alt="product" loading="lazy">
+                        <span class="product__card__size">
+                          250 г
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
+
               </div>
+
 
             </div>
 
 
           </div>
 
-
         </div>
-
       </div>
+
+      <div class="intro__ellipse"></div>
     </div>
 
-    <div class="intro__ellipse"></div>
-  </div>
+  </main>
 
-</main>
-
-<!--#include virtual="/parts/footer.html" -->
+  <!--#include virtual="/parts/footer.html" -->

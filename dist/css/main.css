@@ -1507,7 +1507,7 @@ span.error {
 }
 
 .intro--result {
-  padding-bottom: 0;
+  padding-bottom: 50px;
 }
 
 .intro--result .intro__content {
@@ -2109,7 +2109,7 @@ span.error {
 
 .pass__bg {
   position: absolute;
-  top: 55%;
+  top: 60%;
   right: -365px;
   width: 1173px;
   height: 604px;
@@ -2117,10 +2117,6 @@ span.error {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   background: url("../../images/dist/pass/bg.png") no-repeat center;
-}
-
-.pass__title {
-  margin-bottom: 10px;
 }
 
 .pass__text {
@@ -2141,7 +2137,7 @@ span.error {
 .pass__photo {
   position: absolute;
   left: -100px;
-  bottom: 30px;
+  bottom: 20px;
   z-index: 3;
 }
 
@@ -2158,6 +2154,24 @@ span.error {
 .pass__decore--2 {
   top: 100px;
   right: 0;
+}
+
+.pass__title__wrapper {
+  position: relative;
+  width: 314px;
+  height: 175px;
+  margin-bottom: 15px;
+}
+
+.pass__title__text {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 58px;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 20px #ffffff;
 }
 
 .popup {
@@ -2755,7 +2769,7 @@ b {
 .step__cookie {
   position: absolute;
   top: -170px;
-  left: 380px;
+  left: 420px;
   z-index: 2;
 }
 
@@ -3730,13 +3744,27 @@ b {
     padding-left: 15px;
   }
 
-  .pass__title {
-    max-width: 216px;
-  }
-
   .pass__text {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .pass__title__wrapper {
+    width: 204px;
+    height: 114px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pass__title {
+    width: 204px;
+    height: 114px;
+  }
+
+  .pass__title__text {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 58px;
   }
 
   .result__inner .question__intro__bg {
@@ -4317,12 +4345,6 @@ b {
   .pass {
     padding-top: 17px;
     padding-bottom: 420px;
-  }
-
-  .pass__title {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .pass__content {

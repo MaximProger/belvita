@@ -1,459 +1,473 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
 
-	<title>
-		Главная
-	</title>
-	<meta name="description" content="Startup HTML">
+  <title>
+    
+  </title>
+  <meta name="description" content="Startup HTML">
 
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="icon" href="images/favicon.png">
+  <link rel="icon" href="images/favicon.png">
 
-	<link rel="stylesheet" href="css/include/slick.css">
-	<link rel="stylesheet" href="css/include/select2.min.css">
-	<link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/include/slick.css">
+  <link rel="stylesheet" href="css/include/select2.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
 <body>
 
-	<header class="header" id="header">
-		<div class="container">
-			<div class="header__inner">
-				<div class="nav nav--left" id="nav">
-					<ul class="nav__list">
-						<li class="nav__item nav__item--cabinet no-xl md">
-							<a href="cabinet.html" class="nav__link">
-								<span class="nav__link__icon no-xl md"></span>
-								<span class="nav__link__text">
-									Личный кабинет
-								</span>
-								<img width="174" height="34" class="nav__link__bg nav__link__bg--7"
-									src="images/dist/nav__link__bg_7.svg" alt="img" loading="lazy">
-							</a>
-						</li>
-
-						<li class="nav__item">
-							<a href="index.html" class="nav__link nav__link--active">
-								<span class="nav__link__text">
-									Главная
-								</span>
-								<img width="164" height="34" class="nav__link__bg nav__link__bg--1"
-									src="images/dist/nav__link__bg_1.svg" alt="img" loading="lazy">
-							</a>
-						</li>
-
-						<li class="nav__item">
-							<a href="test.html" class="nav__link nav__link">
-								<span class="nav__link__text">
-									СОЖ-Тест
-								</span>
-								<img width="175" height="34" class="nav__link__bg nav__link__bg--2"
-									src="images/dist/nav__link__bg_2.svg" alt="img" loading="lazy">
-							</a>
-						</li>
-
-						<li class="nav__item">
-							<a href="product.html" class="nav__link">
-								<span class="nav__link__text">
-									О Продукте
-								</span>
-								<img width="148" height="34" class="nav__link__bg nav__link__bg--3"
-									src="images/dist/nav__link__bg_3.svg" alt="img" loading="lazy">
-							</a>
-						</li>
-
-						<li class="nav__item">
-							<a href="winners.html" class="nav__link">
-								<span class="nav__link__text">
-									Победители
-								</span>
-								<img width="148" height="34" class="nav__link__bg nav__link__bg--4"
-									src="images/dist/nav__link__bg_4.svg" alt="img" loading="lazy">
-							</a>
-						</li>
-
-						<li class="nav__item">
-							<a href="index.html" class="nav__link">
-								<span class="nav__link__text">
-									Правила
-								</span>
-								<img width="164" height="34" class="nav__link__bg nav__link__bg--5" src="images/dist/nav__link__bg.svg"
-									alt="img" loading="lazy">
-							</a>
-						</li>
-
-						<li class="nav__item">
-							<a href="feedback.html" class="nav__link">
-								<span class="nav__link__text">
-									Обратная связь
-								</span>
-								<img width="162" height="34" class="nav__link__bg nav__link__bg--6"
-									src="images/dist/nav__link__bg_6.svg" alt="img" loading="lazy">
-							</a>
-						</li>
-					</ul>
-
-					<div class="nav__mobile__box no-xl md">
-						<a href="#" class="nav__btn btn" data-popup="#registrationPopup">
-							зарегистрировать карту
-						</a>
-
-						<span class="nav__mobile__box__bg"></span>
-					</div>
-				</div>
-
-				<div class="nav nav--right">
-					<ul class="nav__list">
-						<li class="nav__item nav__item--burger no-xl md">
-							<button class="burger" id="burgerBtn" type="button">
-								<span class="burger__item">Menu</span>
-							</button>
-						</li>
-
-						<li class="nav__item nav__item--registration">
-							<a href="#" class="nav__btn btn" data-popup="#registrationPopup">
-								зарегистрировать карту
-							</a>
-						</li>
-
-						<li class="nav__item nav__item--lk">
-							<a href="cabinet.html" class="nav__link">
-								<span class="nav__link__icon no-xl md"></span>
-								<span class="nav__link__text">
-									Личный кабинет
-								</span>
-								<img width="175" height="34" class="nav__link__bg nav__link__bg--7"
-									src="images/dist/nav__link__bg_7.svg" alt="img" loading="lazy">
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
-
-<main class="main">
-
-  <div class="intro intro--cabinet">
+  <header class="header" id="header">
     <div class="container">
-      <div class="intro__inner">
-        <div class="intro__content">
+      <div class="header__inner">
+        <div class="nav nav--left" id="nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--cabinet no-xl md">
+              <a href="cabinet.html" class="nav__link">
+                <span class="nav__link__icon no-xl md"></span>
+                <span class="nav__link__text">
+                  Личный кабинет
+                </span>
+                <img width="174" height="34" class="nav__link__bg nav__link__bg--7"
+                  src="images/dist/nav__link__bg_7.svg" alt="img" loading="lazy">
+              </a>
+            </li>
 
-          <a href="#" class="logo">
-            <span class="logo__item">
-              <img class="logo__belvita" width="158" height="149" src="images/logo.png" alt="belvita" loading="lazy">
-              <span class="logo__ellipse"></span>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <span class="nav__link__text">
+                  Главная
+                </span>
+                <img width="164" height="34" class="nav__link__bg nav__link__bg--1"
+                  src="images/dist/nav__link__bg_1.svg" alt="img" loading="lazy">
+              </a>
+            </li>
 
-              <img class="logo__perecrestok" width="149" height="34" src="images/dist/perecrestok.svg" alt="perecrestok"
-                loading="lazy">
-            </span>
-          </a>
+            <li class="nav__item">
+              <a href="test.html" class="nav__link nav__link">
+                <span class="nav__link__text">
+                  СОЖ-Тест
+                </span>
+                <img width="175" height="34" class="nav__link__bg nav__link__bg--2"
+                  src="images/dist/nav__link__bg_2.svg" alt="img" loading="lazy">
+              </a>
+            </li>
 
-          <div class="feedback cabinet">
-            <div class="cabinet__head">
-              <h2 class="cabinet__title">
-                <span class="cabinet__title__text">
+            <li class="nav__item">
+              <a href="product.html" class="nav__link">
+                <span class="nav__link__text">
+                  О Продукте
+                </span>
+                <img width="148" height="34" class="nav__link__bg nav__link__bg--3"
+                  src="images/dist/nav__link__bg_3.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="winners.html" class="nav__link">
+                <span class="nav__link__text">
+                  Победители
+                </span>
+                <img width="148" height="34" class="nav__link__bg nav__link__bg--4"
+                  src="images/dist/nav__link__bg_4.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <span class="nav__link__text">
+                  Правила
+                </span>
+                <img width="164" height="34" class="nav__link__bg nav__link__bg--5" src="images/dist/nav__link__bg.svg"
+                  alt="img" loading="lazy">
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="feedback.html" class="nav__link nav__link--active">
+                <span class="nav__link__text">
                   Обратная связь
                 </span>
-                <span class="cabinet__title__bg"></span>
-              </h2>
+                <img width="162" height="34" class="nav__link__bg nav__link__bg--6"
+                  src="images/dist/nav__link__bg_6.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+          </ul>
 
-              <div class="feedback__body">
-                <div class="feedback__box">
-                  <div class="feedback__box__wrapper">
-                    <h3 class="feedback__box__title">
-                      Cвязаться с нами
-                    </h3>
-                    <p class="feedback__box__description">
-                      Если у вас появились вопросы — посмотрите F.A.Q или просто оставьте нам сообщение, и мы<br
-                        class="no-md">
-                      обязательно ответим!
-                    </p>
+          <div class="nav__mobile__box no-xl md">
+            <a href="#" class="nav__btn btn" data-popup="#registrationPopup">
+              зарегистрировать карту
+            </a>
 
-                    <form id="feedbackForm" name="feedbackForm" class="feedback__form form">
-                      <div class="form__line">
+            <span class="nav__mobile__box__bg"></span>
+          </div>
+        </div>
+
+        <div class="nav nav--right">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--burger no-xl md">
+              <button class="burger" id="burgerBtn" type="button">
+                <span class="burger__item">Menu</span>
+              </button>
+            </li>
+
+            <li class="nav__item nav__item--registration">
+              <a href="#" class="nav__btn btn" data-popup="#registrationPopup">
+                зарегистрировать карту
+              </a>
+            </li>
+
+            <li class="nav__item nav__item--lk">
+              <a href="cabinet.html" class="nav__link">
+                <span class="nav__link__icon no-xl md"></span>
+                <span class="nav__link__text">
+                  Личный кабинет
+                </span>
+                <img width="175" height="34" class="nav__link__bg nav__link__bg--7"
+                  src="images/dist/nav__link__bg_7.svg" alt="img" loading="lazy">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="intro intro--cabinet">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+
+            <a href="#" class="logo">
+              <span class="logo__item">
+                <img class="logo__belvita" width="158" height="149" src="images/logo.png" alt="belvita" loading="lazy">
+                <span class="logo__ellipse"></span>
+
+                <img class="logo__perecrestok" width="149" height="34" src="images/dist/perecrestok.svg"
+                  alt="perecrestok" loading="lazy">
+              </span>
+            </a>
+
+            <div class="feedback cabinet">
+              <div class="cabinet__head">
+                <h2 class="cabinet__title">
+                  <span class="cabinet__title__text">
+                    Обратная связь
+                  </span>
+                  <span class="cabinet__title__bg"></span>
+                </h2>
+
+                <div class="feedback__body">
+                  <div class="feedback__box">
+                    <div class="feedback__box__wrapper">
+                      <h3 class="feedback__box__title">
+                        Cвязаться с нами
+                      </h3>
+                      <p class="feedback__box__description">
+                        Если у вас появились вопросы — посмотрите F.A.Q или просто оставьте нам сообщение, и мы<br
+                          class="no-md">
+                        обязательно ответим!
+                      </p>
+
+                      <form id="feedbackForm" name="feedbackForm" class="feedback__form form">
+                        <div class="form__line">
+                          <div class="form__item">
+                            <input name="name" id="name" type="text" class="form__input" placeholder="Ваше имя"
+                              required>
+                          </div>
+                          <div class="form__item">
+                            <input name="email" id="email" type="email" class="form__input" placeholder="Ваш e-mail"
+                              required>
+                          </div>
+                        </div>
+
                         <div class="form__item">
-                          <input name="name" id="name" type="text" class="form__input" placeholder="Ваше имя" required>
+                          <div class="select form__select">
+                            <select name="theme" data-placeholder="Выберите тему сообщения" required>
+                              <option value=""></option>
+                              <option value="1">Тема 1</option>
+                              <option value="2">Тема 2</option>
+                            </select>
+                          </div>
                         </div>
+
                         <div class="form__item">
-                          <input name="email" id="email" type="email" class="form__input" placeholder="Ваш e-mail"
-                            required>
+                          <textarea name="message" id="message" class="form__input form__input--textarea"
+                            placeholder="Ваше сообщение"></textarea>
                         </div>
-                      </div>
 
-                      <div class="form__item">
-                        <div class="select form__select">
-                          <select name="theme" data-placeholder="Выберите тему сообщения" required>
-                            <option value=""></option>
-                            <option value="1">Тема 1</option>
-                            <option value="2">Тема 2</option>
-                          </select>
+                        <div class="form__item">
+                          <button type="submit" class="btn form__submit">
+                            отправить
+                          </button>
                         </div>
-                      </div>
 
-                      <div class="form__item">
-                        <textarea name="message" id="message" class="form__input form__input--textarea"
-                          placeholder="Ваше сообщение"></textarea>
-                      </div>
-
-                      <div class="form__item">
-                        <button type="submit" class="btn form__submit">
-                          отправить
-                        </button>
-                      </div>
-
-                    </form>
+                      </form>
+                    </div>
                   </div>
-                </div>
 
-                <div class="feedback__box">
-                  <div class="feedback__box__wrapper">
-                    <h3 class="feedback__box__title feedback__box__title--left">
-                      FAQ
-                    </h3>
+                  <div class="feedback__box">
+                    <div class="feedback__box__wrapper">
+                      <h3 class="feedback__box__title feedback__box__title--left">
+                        FAQ
+                      </h3>
 
-                    <div class="faq">
-                      <div class="faq__item faq__item--active">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Кто является организатором акции?
-                          </span>
+                      <div class="faq">
+                        <div class="faq__item faq__item--active">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Кто является организатором акции?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6
+                          </div>
                         </div>
 
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6
-                        </div>
-                      </div>
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Кто может принимать участие в акции? (граждане РФ, несовершеннолетние, и пр.)
+                            </span>
+                          </div>
 
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Кто может принимать участие в акции? (граждане РФ, несовершеннолетние, и пр.)
-                          </span>
-                        </div>
-
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
-
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Где приобрести акционную продукцию?
-                          </span>
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
                         </div>
 
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Где приобрести акционную продукцию?
+                            </span>
+                          </div>
 
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Где можно увидеть полные правила акции?
-                          </span>
-                        </div>
-
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
-
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Может ли акция досрочно прекратиться??
-                          </span>
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
                         </div>
 
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Где можно увидеть полные правила акции?
+                            </span>
+                          </div>
 
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Насколько реальна акция?
-                          </span>
-                        </div>
-
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
-
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Каковы сроки проведения Акции?
-                          </span>
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
                         </div>
 
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Может ли акция досрочно прекратиться??
+                            </span>
+                          </div>
 
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Насколько реальна акция?
-                          </span>
-                        </div>
-
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
-
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Каковы сроки проведения Акции?
-                          </span>
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
                         </div>
 
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Насколько реальна акция?
+                            </span>
+                          </div>
 
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Насколько реальна акция?
-                          </span>
-                        </div>
-
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
-
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Каковы сроки проведения Акции?
-                          </span>
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
                         </div>
 
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Каковы сроки проведения Акции?
+                            </span>
+                          </div>
 
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Насколько реальна акция?
-                          </span>
-                        </div>
-
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
-
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Каковы сроки проведения Акции?
-                          </span>
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
                         </div>
 
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
-                        </div>
-                      </div>
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Насколько реальна акция?
+                            </span>
+                          </div>
 
-                      <div class="faq__item">
-                        <div class="faq__header">
-                          <span class="faq__icon"></span>
-                          <span class="faq__question">
-                            Насколько реальна акция?
-                          </span>
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
                         </div>
 
-                        <div class="faq__text">
-                          ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва, ул.
-                          Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
-                          (граждане РФ, несовершеннолетние, и пр.)
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Каковы сроки проведения Акции?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
                         </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Насколько реальна акция?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Каковы сроки проведения Акции?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Насколько реальна акция?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Каковы сроки проведения Акции?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
+                        </div>
+
+                        <div class="faq__item">
+                          <div class="faq__header">
+                            <span class="faq__icon"></span>
+                            <span class="faq__question">
+                              Насколько реальна акция?
+                            </span>
+                          </div>
+
+                          <div class="faq__text">
+                            ООО «Интенсив», ОГРН: 1127746672822, ИНН: 7718899299, место нахождения: 107497, г. Москва,
+                            ул.
+                            Монтажная, д. 9, стр.1, 3 этаж, пом. IV, ком. 13, оф.6Кто может принимать участие в акции?
+                            (граждане РФ, несовершеннолетние, и пр.)
+                          </div>
+                        </div>
+
                       </div>
 
                     </div>
-
                   </div>
                 </div>
+
               </div>
+
 
             </div>
 
 
           </div>
 
-
         </div>
-
       </div>
+
+      <div class="intro__ellipse"></div>
     </div>
 
-    <div class="intro__ellipse"></div>
-  </div>
+  </main>
 
-</main>
-
-<footer class="footer" id="footer">
+  <footer class="footer" id="footer">
 	<div class="container">
 		<div class="footer__inner">
 			<p class="footer__description">
