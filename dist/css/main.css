@@ -487,6 +487,10 @@ body {
   min-height: 80vh;
 }
 
+.main--auto {
+  min-height: auto;
+}
+
 .cabinet__head {
   position: relative;
 }
@@ -1491,10 +1495,6 @@ span.error {
   position: relative;
   overflow: hidden;
   padding-bottom: 130px;
-}
-
-.intro--test {
-  min-height: 904px;
 }
 
 .intro--question {
@@ -4376,7 +4376,7 @@ b {
   }
 
   .question__item {
-    max-width: 298px;
+    max-width: 310px;
     margin-bottom: 30px;
   }
 
@@ -4393,6 +4393,11 @@ b {
     line-height: 22px;
     padding: 14px 42px;
     border-radius: 30px;
+  }
+
+  .question__item .custom__checkbox__label {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .result__btn {

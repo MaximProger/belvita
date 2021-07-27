@@ -245,6 +245,10 @@ body {
 
 .main {
   min-height: 80vh;
+
+  &--auto {
+    min-height: auto;
+  }
 }
 
 @media (max-width: $tablet) {
