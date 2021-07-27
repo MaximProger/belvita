@@ -42,18 +42,52 @@
 .nav__link__bg {
   position: absolute;
   top: 50%;
-  right: -17px;
+  right: -16px;
   z-index: 1;
 
   display: block;
-
-  min-width: 150%;
+  width: 100%;
   height: 34px;
+  min-height: 34px;
 
   transition: all 0.2s ease;
   transform: translateY(-50%);
 
   opacity: 0;
+
+  &--1 {
+    min-width: 164px;
+    width: 164px;
+  }
+
+  &--2 {
+    min-width: 175px;
+    width: 175px;
+  }
+
+  &--3 {
+    min-width: 148px;
+    width: 148px;
+  }
+
+  &--4 {
+    min-width: 148px;
+    width: 148px;
+  }
+
+  &--5 {
+    min-width: 180%;
+  }
+
+  &--6 {
+    min-width: 162px;
+    width: 162px;
+  }
+
+  &--7 {
+    min-width: 175px;
+    width: 175px;
+  }
 }
 
 .nav__link__text {

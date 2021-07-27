@@ -25,6 +25,23 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  .custom__checkbox + .custom__checkbox__label {
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: -0.02em;
+
+    &::before {
+      width: 14px;
+      height: 14px;
+      margin-right: 14px;
+    }
+  }
+
+  .custom__checkbox:checked + .custom__checkbox__label::before {
+    background-image: url("../../images/dist/icons/circle.svg");
+  }
 }
 
 .form__input {
@@ -72,6 +89,8 @@
   line-height: 22px;
 
   padding: 17px 46px;
+
+  border-radius: 30px;
 
   &:disabled {
     pointer-events: none;

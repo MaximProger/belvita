@@ -219,4 +219,12 @@ $(document).ready(function () {
 
     openPopup($("#successfulRegistration"));
   });
+
+  function changeCloud() {
+    $(".intro__cloud").toggleClass("intro__cloud--active");
+  }
+
+  setInterval(() => {
+    changeCloud();
+  }, 3000);
 });

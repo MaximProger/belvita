@@ -1,5 +1,5 @@
 .result__inner {
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 
   .question__intro__number {
     margin-bottom: 10px;
@@ -22,6 +22,11 @@
   width: fit-content;
 
   border-radius: 30px;
+}
+
+.result__footer {
+  position: relative;
+  z-index: 3;
 }
 
 @media (max-width: $tablet) {

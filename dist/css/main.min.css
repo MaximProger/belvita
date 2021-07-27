@@ -310,8 +310,11 @@ body {
   opacity: 0;
 }
 .custom__checkbox + .custom__checkbox__label {
-  font-size: 14px;
-  line-height: 18px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -324,6 +327,7 @@ body {
   user-select: none;
   font-size: 14px;
   letter-spacing: -0.02em;
+  color: #155b11;
 }
 .custom__checkbox + .custom__checkbox__label::before {
   display: inline-block;
@@ -332,8 +336,8 @@ body {
   -webkit-box-flex: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-  width: 14px;
-  height: 14px;
+  width: 26px;
+  height: 26px;
   margin-right: 14px;
   content: "";
   cursor: pointer;
@@ -343,7 +347,7 @@ body {
   background-position: center center;
 }
 .custom__checkbox:checked + .custom__checkbox__label::before {
-  background-image: url(../images/dist/icons/circle.svg);
+  background-image: url(../images/dist/icons/circle__big.svg);
 }
 .text__accent {
   font-weight: 700;
@@ -989,6 +993,19 @@ body {
 .form__item:last-child {
   margin-bottom: 0;
 }
+.form__item .custom__checkbox + .custom__checkbox__label {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+}
+.form__item .custom__checkbox + .custom__checkbox__label::before {
+  width: 14px;
+  height: 14px;
+  margin-right: 14px;
+}
+.form__item .custom__checkbox:checked + .custom__checkbox__label::before {
+  background-image: url(../images/dist/icons/circle.svg);
+}
 .form__input {
   font-family: Gotham Pro;
   font-style: normal;
@@ -1057,6 +1074,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   padding: 17px 46px;
+  border-radius: 30px;
 }
 .form__submit:disabled {
   pointer-events: none;
@@ -1459,9 +1477,14 @@ span.error {
   top: 200px;
   right: 67px;
   z-index: 3;
+  visibility: hidden;
   max-width: 304px;
   width: 100%;
   text-align: center;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  opacity: 0;
 }
 .intro__cloud--large {
   top: 180px;
@@ -1469,6 +1492,10 @@ span.error {
 }
 .intro__cloud--large .intro__cloud__text {
   font-weight: 500;
+}
+.intro__cloud--active {
+  visibility: visible;
+  opacity: 1;
 }
 .intro__cloud__text {
   font-size: 16px;
@@ -1754,11 +1781,12 @@ span.error {
 .nav__link__bg {
   position: absolute;
   top: 50%;
-  right: -17px;
+  right: -16px;
   z-index: 1;
   display: block;
-  min-width: 150%;
+  width: 100%;
   height: 34px;
+  min-height: 34px;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1767,6 +1795,33 @@ span.error {
   transform: translateY(-50%);
   opacity: 0;
 }
+.nav__link__bg--1 {
+  min-width: 164px;
+  width: 164px;
+}
+.nav__link__bg--2 {
+  min-width: 175px;
+  width: 175px;
+}
+.nav__link__bg--3 {
+  min-width: 148px;
+  width: 148px;
+}
+.nav__link__bg--4 {
+  min-width: 148px;
+  width: 148px;
+}
+.nav__link__bg--5 {
+  min-width: 180%;
+}
+.nav__link__bg--6 {
+  min-width: 162px;
+  width: 162px;
+}
+.nav__link__bg--7 {
+  min-width: 175px;
+  width: 175px;
+}
 .nav__link__text {
   position: relative;
   z-index: 2;
@@ -1774,7 +1829,7 @@ span.error {
 .pass {
   position: relative;
   z-index: 1;
-  padding-top: 67px;
+  padding-top: 100px;
 }
 .pass .container {
   position: relative;
@@ -1797,11 +1852,12 @@ span.error {
 .pass__content__inner {
   position: relative;
   z-index: 2;
+  bottom: 50px;
   max-width: 415px;
 }
 .pass__bg {
   position: absolute;
-  top: 65%;
+  top: 55%;
   right: -365px;
   width: 1173px;
   height: 604px;
@@ -1829,7 +1885,7 @@ span.error {
 .pass__photo {
   position: absolute;
   left: -100px;
-  bottom: 0;
+  bottom: 30px;
   z-index: 3;
 }
 .pass__decore {
@@ -2039,7 +2095,7 @@ span.error {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 85px;
+  margin-bottom: 95px;
 }
 .question__intro__wrapper {
   max-width: 653px;
@@ -2102,7 +2158,7 @@ span.error {
   border-radius: 30px;
 }
 .result__inner {
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 .result__inner .question__intro__number {
   margin-bottom: 10px;
@@ -2121,6 +2177,10 @@ span.error {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 30px;
+}
+.result__footer {
+  position: relative;
+  z-index: 3;
 }
 .select {
   position: relative;
@@ -2365,6 +2425,8 @@ span.error {
   z-index: 2;
 }
 .steps__inner {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2380,7 +2442,7 @@ span.error {
 }
 .steps__bg {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   left: 0;
   top: 50%;
   height: 564px;
@@ -2407,8 +2469,8 @@ span.error {
 }
 .steps__item:nth-child(3) .steps__content {
   position: absolute;
-  top: 50%;
-  right: -64px;
+  top: 45%;
+  right: -74px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2419,7 +2481,7 @@ span.error {
 .steps__item__title {
   font-weight: 700;
   font-size: 24px;
-  margin-bottom: 3px;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 .steps__item__text {
@@ -2610,9 +2672,9 @@ span.error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -3180,6 +3242,7 @@ span.error {
     transform: translate(-50%, -50%);
   }
   .pass__content__inner {
+    bottom: auto;
     max-width: 350px;
     padding-left: 15px;
   }
@@ -3750,7 +3813,6 @@ span.error {
     padding-bottom: 81px;
   }
   .steps__inner {
-    position: static;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3889,7 +3951,7 @@ span.error {
 }
 @supports (-webkit-appearance: none) {
   .custom__checkbox:checked + .custom__checkbox__label::before {
-    background-image: url(../images/dist/icons/circle.svg);
+    background-image: url(../images/dist/icons/circle__big.svg);
   }
   .search__icon {
     background: url(../images/dist/icons/search.svg) no-repeat center;
@@ -3905,6 +3967,9 @@ span.error {
   }
   .faq__icon {
     background: url(../images/dist/icons/faq__plus.svg) no-repeat center;
+  }
+  .form__item .custom__checkbox:checked + .custom__checkbox__label::before {
+    background-image: url(../images/dist/icons/circle.svg);
   }
   .form__select
     .select2-container--default
