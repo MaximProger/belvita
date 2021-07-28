@@ -1,4 +1,7 @@
 .product {
+  position: relative;
+  z-index: 3;
+
   .cabinet__title {
     margin-bottom: 80px;
   }
@@ -14,7 +17,7 @@
 }
 
 .product__card {
-  width: 278px;
+  width: 297px;
   height: 265px;
 
   margin: 0 40px 40px 40px;

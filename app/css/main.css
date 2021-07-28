@@ -2077,7 +2077,7 @@ span.error {
 .pass {
   position: relative;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 140px;
 }
 
 .pass .container {
@@ -2137,7 +2137,7 @@ span.error {
 .pass__photo {
   position: absolute;
   left: -100px;
-  bottom: 20px;
+  bottom: 60px;
   z-index: 3;
 }
 
@@ -2310,6 +2310,11 @@ span.error {
   letter-spacing: -0.02em;
 }
 
+.product {
+  position: relative;
+  z-index: 3;
+}
+
 .product .cabinet__title {
   margin-bottom: 80px;
 }
@@ -2330,7 +2335,7 @@ span.error {
 }
 
 .product__card {
-  width: 278px;
+  width: 297px;
   height: 265px;
   margin: 0 40px 40px 40px;
 }
@@ -2769,7 +2774,7 @@ b {
 .step__cookie {
   position: absolute;
   top: -170px;
-  left: 420px;
+  left: 33vw;
   z-index: 2;
 }
 
@@ -3101,6 +3106,18 @@ b {
 
   .footer__bg {
     top: -100px;
+  }
+
+  .pass {
+    padding-top: 100px;
+  }
+
+  .pass__photo {
+    bottom: 20px;
+  }
+
+  .step__cookie {
+    left: 420px;
   }
 }
 
@@ -4508,7 +4525,7 @@ b {
   }
 
   .stock__slider__wrapper {
-    max-width: 278px;
+    max-width: 297px;
   }
 
   .stock__slider__item {

@@ -14,7 +14,7 @@
 .step__cookie {
   position: absolute;
   top: -170px;
-  left: 420px;
+  left: 33vw;
   z-index: 2;
 }
 
@@ -97,6 +97,12 @@
   line-height: 22px;
 
   padding: 11px 25px;
+}
+
+@media (max-width: 1600px) {
+  .step__cookie {
+    left: 420px;
+  }
 }
 
 @media (max-width: $tablet) {
