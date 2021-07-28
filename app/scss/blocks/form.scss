@@ -26,6 +26,24 @@
     margin-bottom: 0;
   }
 
+  &--link {
+    margin-top: -10px;
+    margin-bottom: 20px !important;
+  }
+
+  &--error {
+    font-size: 12px;
+    line-height: 18px;
+
+    margin-top: -24px;
+    margin-bottom: 3px !important;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #d2311a;
+  }
+
   .custom__checkbox + .custom__checkbox__label {
     font-size: 14px;
     line-height: 18px;
@@ -289,6 +307,10 @@ span.error {
   letter-spacing: -0.02em;
 
   color: #d2311a;
+
+  &--special {
+    text-align: center;
+  }
 }
 
 .form__item__description {
@@ -320,6 +342,10 @@ span.error {
       text-align: left;
     }
   }
+
+  .custom__checkbox__label {
+    font-weight: normal;
+  }
 }
 
 .form__box__text {
@@ -333,6 +359,14 @@ span.error {
 
   text-decoration: underline;
   text-align: center;
+
+  color: $green;
+}
+
+.form__item__link {
+  display: inline;
+
+  text-decoration: underline;
 
   color: $green;
 }

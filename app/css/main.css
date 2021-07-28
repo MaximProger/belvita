@@ -1023,7 +1023,7 @@ body {
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
-  max-width: 755px;
+  max-width: 1051px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1131,6 +1131,21 @@ body {
 
 .form__item:last-child {
   margin-bottom: 0;
+}
+
+.form__item--link {
+  margin-top: -10px;
+  margin-bottom: 20px !important;
+}
+
+.form__item--error {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: -24px;
+  margin-bottom: 3px !important;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #d2311a;
 }
 
 .form__item .custom__checkbox + .custom__checkbox__label {
@@ -1434,6 +1449,10 @@ span.error {
   color: #d2311a;
 }
 
+.form__item__error--special {
+  text-align: center;
+}
+
 .form__item__description {
   font-size: 12px;
   line-height: 18px;
@@ -1459,6 +1478,10 @@ span.error {
   text-align: left;
 }
 
+.form__item .custom__checkbox__label {
+  font-weight: normal;
+}
+
 .form__box__text {
   font-size: 14px;
   line-height: 18px;
@@ -1469,6 +1492,12 @@ span.error {
   line-height: 24px;
   text-decoration: underline;
   text-align: center;
+  color: #155b11;
+}
+
+.form__item__link {
+  display: inline;
+  text-decoration: underline;
   color: #155b11;
 }
 
@@ -2264,6 +2293,10 @@ span.error {
   text-transform: uppercase;
   color: #155b11;
   margin: 0 auto 30px;
+}
+
+.popup__subtitle {
+  margin-bottom: 20px;
 }
 
 .popup__form {

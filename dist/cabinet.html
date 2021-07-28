@@ -420,13 +420,18 @@
 	<div class="container">
 		<div class="footer__inner">
 			<p class="footer__description">
-				Срок проведения акции, включая выдачу призов, с 01 августа 2021 по 31 декабря 2021 года. Срок совершения покупок
-				и регистрации чеков на сайте belvita.life c 01 августа 2021 по 30 сентября 2021, срок прохождения теста и
-				получения СОЖ-карты с 01 августа 2021 по 31 декабря 2021 года. Организатор Акции ООО "Мон'дэлис Русь".
-				Информацию об ОрганизатореАкции, о правилах ее проведения,количестве призов по результатам акции, сроках и месте
-				и порядке их получения можно посмотреть на сайте belvita.life. Количество призов ограничено. Акция проводится на
-				территории Российской Федерации и распространяется только на продукцию, купленнуюна территории Российской
-				Федерации. По условиям Клуба Перекрёсток 10 баллов = 1 рублю.
+				Период проведения акции в ТС Перекрёсток, включая выдачу призов - с 01 августа 2021 по 31 октября 2021 года.
+				Срок совершения покупок, регистрации карт клуба Перекрёсток,<br class="no-md">прохождения теста и получения
+				персональной
+				СОЖ-карты сайте belvita.life c 01 августа 2021 по 30 сентября 2021.<br class="no-md">
+				Организатор Акции ООО «Мон'дэлис Русь». Информацию об Организаторе Акции, о правилах ее проведения, количестве
+				призов по результатам акции, сроках и месте и порядке их получения можно
+				посмотреть на сайте
+				belvita.life.
+				Количество призов ограничено. Акция проводится на территории Российской Федерации и
+				распространяется только на
+				продукцию, купленную на территории<br class="no-md"> Российской Федерации. По условиям Клуба Перекрёсток 10
+				баллов = 1 рублю
 			</p>
 
 			<div class="footer__wrapper">
@@ -542,9 +547,15 @@
 
 					<div class="checkbox__item form__item">
 						<input type="checkbox" class="custom__checkbox" id="personal_data" name="personal_data" required checked>
-						<label for="personal_data" class="custom__checkbox__label">Я даю свое согласие на обработку моих
-							персональных данных в соответствии с Правилами акции и Положением об организации обработки ПД в ООО
-							«Мон’дэлис Русь».</label>
+						<label for="personal_data" class="custom__checkbox__label">
+							<span>
+								Я даю свое <a href="#" class="form__item__link">согласие</a> на обработку моих
+								персональных данных в соответствии с Правилами акции и <a href="#" class="form__item__link">Положением
+									об
+									организации обработки ПД в ООО
+									«Мон’дэлис Русь».</a>
+							</span>
+						</label>
 					</div>
 
 					<div class="checkbox__item form__item">
@@ -588,6 +599,58 @@
 
 					<div class="form__item">
 						<input name="password" id="password" type="password" class="form__input" placeholder="Пароль" required>
+						<span class="form__item__error form__item__error--special">
+							Это поле обязательно к заполнению
+						</span>
+					</div>
+
+					<div class="form__item form__item--error">
+						Неверный логин или пароль
+					</div>
+
+					<div class="form__item form__item--link">
+						<a href="#" class="form__link" data-popup="#passwordPopup">
+							Забыли пароль?
+						</a>
+					</div>
+
+
+					<div class="form__item">
+						<div class="form__box">
+							<button class="btn popup__btn" type="submit">Отправить</button>
+							<div class="form__box__text">
+								Если вы в первый раз на сайте —<br> <a href="#" class="form__link"
+									data-popup="#registrationPopup">зарегистрируйтесь
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="passwordPopup" class="popup">
+		<div class="popup__wrap">
+			<a href="#" class="close-popup popup__close__btn">
+				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17 2L2 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 2L17 17" stroke="#155B11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+
+			</a>
+			<div class="popup__inner">
+				<div class="popup__title">Сброс пароля</div>
+				<p class="popup__subtitle">
+					Введите свой Email для восстановления пароля
+				</p>
+				<form class="popup__form" novalidate="novalidate">
+
+					<div class="form__item">
+						<input name="email_5" id="email_5" type="email" class="form__input" placeholder="E-mail" required>
 						<span class="form__item__error">
 							Это поле обязательно к заполнению
 						</span>
