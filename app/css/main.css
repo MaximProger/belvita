@@ -1527,7 +1527,7 @@ span.error {
 }
 
 .intro--question {
-  padding-bottom: 100px;
+  padding-bottom: 180px;
 }
 
 .intro--question .intro__content {
@@ -3139,6 +3139,10 @@ b {
 
   .footer__bg {
     top: -100px;
+  }
+
+  .intro--question {
+    padding-bottom: 100px;
   }
 
   .pass {

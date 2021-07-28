@@ -11,7 +11,7 @@
 
   &--question {
     // min-height: 530px;
-    padding-bottom: 100px;
+    padding-bottom: 180px;
 
     .intro__content {
       max-width: 100%;
@@ -274,6 +274,14 @@
     bottom: -50px;
 
     z-index: 4;
+  }
+}
+
+@media (max-width: 1600px) {
+  .intro {
+    &--question {
+      padding-bottom: 100px;
+    }
   }
 }
 
